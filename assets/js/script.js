@@ -19,3 +19,20 @@ function close_menu() {
   menuIcon.classList.remove("ri-close-line");
   menuIcon.classList.add("ri-menu-line");
 }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.getElementById('line-fill').classList.add('w-full');
+        }
+      });
+    }, {
+      threshold: 0.5,
+    });
+
+    const target = document.querySelector('#franchise-timeline');
+    if (target) observer.observe(target);
+  });
