@@ -1002,23 +1002,19 @@
 
 
 
-
-
-
-
-
-
+    <!-- owl caraousel cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- scroll animation link -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({       // run only once
-            duration: 350,      // animation duration
-            offset: 150         // start animation when element is 100px into viewport
+        AOS.init({       
+            duration: 350,      
+            offset: 150
         });
-    </script>
-    <script>
+        
         $(document).ready(function () {
+            // testimonal section owl carousel
             $(".testimonial-carousel").owlCarousel({
                 loop: true,
                 margin: 20,
@@ -1033,7 +1029,7 @@
                 }
             });
 
-
+            // franchise partner logo section owl carousel
             $(".franchise-logos").owlCarousel({
                 loop: true,
                 margin: 20,
