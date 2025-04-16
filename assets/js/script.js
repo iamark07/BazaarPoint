@@ -1,4 +1,3 @@
-
 // menu slider functionality
 const menuBtn = document.getElementById("menu-btn");
 const menuIcon = document.getElementById("menu-icon");
@@ -21,18 +20,10 @@ function close_menu() {
 }
 
 
+function openModal(id) {
+    document.getElementById('modal' + id).classList.remove('hidden');
+  }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          document.getElementById('line-fill').classList.add('w-full');
-        }
-      });
-    }, {
-      threshold: 0.5,
-    });
-
-    const target = document.querySelector('#franchise-timeline');
-    if (target) observer.observe(target);
-  });
+  function closeModal(id) {
+    document.getElementById('modal' + id).classList.add('hidden');
+  }
