@@ -7,23 +7,35 @@ menuBtn.addEventListener("click", () => {
   mobileMenu.classList.remove("left-[-100%]");
   mobileMenu.classList.add("left-0");
   // Icon change to close
-  menuIcon.classList.remove("ri-menu-line");
-  menuIcon.classList.add("ri-close-line");
+  //   menuIcon.classList.remove("ri-menu-line");
+  //   menuIcon.classList.add("ri-close-line");
 });
 
 function close_menu() {
   mobileMenu.classList.remove("left-0");
   mobileMenu.classList.add("left-[-100%]");
   // Icon change back to menu
-  menuIcon.classList.remove("ri-close-line");
-  menuIcon.classList.add("ri-menu-line");
+  //   menuIcon.classList.remove("ri-close-line");
+  //   menuIcon.classList.add("ri-menu-line");
 }
 
 
-function openModal(id) {
-    document.getElementById('modal' + id).classList.remove('hidden');
-  }
+// 
 
-  function closeModal(id) {
-    document.getElementById('modal' + id).classList.add('hidden');
-  }
+function openModal(id) {
+  document.getElementById("modal" + id).classList.remove("hidden");
+}
+
+function closeModal(id) {
+  document.getElementById("modal" + id).classList.add("hidden");
+}
+
+document.querySelectorAll(".faq-toggle").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector("svg");
+
+    content.classList.toggle("hidden");
+    icon.classList.toggle("rotate-180");
+  });
+});

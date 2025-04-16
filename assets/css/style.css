@@ -55,5 +55,30 @@
   animation-delay: var(--animation-delay);
 } */
 
+/* testimonal section */
 
+.franchise_partner_testimonal .owl-carousel .owl-stage-outer .owl-stage {
+  padding: 20px 0px !important;
+}
 
+.franchise_partner_testimonal
+  .owl-carousel
+  .owl-stage-outer
+  .owl-stage
+  .owl-item {
+  height: 285.33px !important;
+}
+
+.franchise_partner_testimonal .owl-theme .owl-dots .owl-dot span {
+  background: #8bcfcf !important;
+}
+
+.franchise_partner_testimonal .owl-theme .owl-dots .owl-dot.active span,
+.franchise_partner_testimonal .owl-theme .owl-dots .owl-dot:hover span {
+  background: #0d7377 !important;
+}
+
+/* frnchise partner section logo section */
+.franchise-logos.owl-theme .owl-nav.disabled + .owl-dots {
+  display: none !important;
+}
