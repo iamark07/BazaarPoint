@@ -32,11 +32,11 @@
 
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
     <!-- Header section start-->
     <header
-        class="w-full shadow-md sticky top-0 z-50 bg-[#0d7377]/10 backdrop-blur-xl px-6 md:px-10 transition-all duration-300">
+        class="shadow-md sticky top-0 z-50 bg-[#0d7377]/10 backdrop-blur-xl px-6 md:px-10 transition-all duration-300">
         <div class="container mx-auto py-4 flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center gap-3">
@@ -114,50 +114,52 @@
     <!-- Header section end -->
 
     <!-- Hero Section start-->
-    <section class="w-full bg-white pt-20 pb-10 md:py-20 px-6 sm:px-10 md:px-16 overflow-hidden">
-        <div class="flex flex-col md:flex-row justify-center gap-14 md:gap-7 items-center w-full">
+    <section class=" w-full bg-white pt-20 pb-10 md:py-20 px-6 sm:px-10 md:px-16 overflow-hidden">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-center gap-14 md:gap-7 items-center w-full">
 
-            <!-- Left Content -->
-            <div class="space-y-5 animate-fade-in-left w-full md:w-[60%]">
-                <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800  leading-tight">
-                    Start Your <span class="text-[#0d7377] font-bold">Franchise Journey</span> <br> with <span
-                        class="text-[#0d7377] font-bold">BazaarPoint</span>
-                </h1>
-                <p class="text-gray-600 text-sm sm:text-base">
-                    Join our growing family of successful franchise partners and grow your business with expert
-                    guidance, low investment, and high returns.
-                </p>
-                <a href="#franchise-models"
-                    class="inline-flex items-center gap-2 bg-[#0d7377] hover:bg-[#0b5f60] text-white font-medium px-6 py-3 rounded-full shadow-lg transition duration-300 text-sm md:text-base hover:scale-105">
-                    <i class="ri-store-2-line text-lg"></i> Explore Franchise Models
-                </a>
-            </div>
+                <!-- Left Content -->
+                <div class="space-y-5 animate-fade-in-left w-full md:w-[60%]">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800  leading-tight">
+                        Start Your <span class="text-[#0d7377] font-bold">Franchise Journey</span> <br> with <span
+                            class="text-[#0d7377] font-bold">BazaarPoint</span>
+                    </h1>
+                    <p class="text-gray-600 text-sm sm:text-base">
+                        Join our growing family of successful franchise partners and grow your business with expert
+                        guidance, low investment, and high returns.
+                    </p>
+                    <a href="#franchise-models"
+                        class="inline-flex items-center gap-2 bg-[#0d7377] hover:bg-[#0b5f60] text-white font-medium px-6 py-3 rounded-full shadow-lg transition duration-300 text-sm md:text-base hover:scale-105">
+                        <i class="ri-store-2-line text-lg"></i> Explore Franchise Models
+                    </a>
+                </div>
 
-            <!-- Right Animation/Image -->
-            <div class="relative flex justify-center animate-float w-full md:w-[40%]">
-                <img src="assets/img/hero-section.png" alt="Franchise Image"
-                    class="w-full md:w-[90%] max-w-md md:max-w-lg rounded-[30px_80px_30px_10px] border-4 border-[#0d7377] shadow-xl transition-all duration-500">
+                <!-- Right Animation/Image -->
+                <div class="relative flex justify-center animate-float w-full md:w-[40%]">
+                    <img src="assets/img/hero-section.png" alt="Franchise Image"
+                        class="w-full md:w-[90%] max-w-md md:max-w-lg rounded-[30px_80px_30px_10px] border-4 border-[#0d7377] shadow-xl transition-all duration-500">
+                </div>
             </div>
         </div>
     </section>
     <!-- Hero section end -->
 
     <!-- Why Choose Us Section -->
-    <section class="bg-[#f4ffff] py-16 px-6 sm:px-10 md:px-16">
-        <div class="max-w-7xl mx-auto text-center space-y-10">
+    <section class=" bg-[#f4ffff] py-16 px-6 sm:px-10 md:px-16">
+        <div class="container mx-auto text-center space-y-10">
             <!-- Heading -->
             <div class="space-y-3 pb-5">
-                <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800" >
                     Why Choose <span class="text-[#0d7377] font-semibold">BazaarPoint</span> as Your Franchise Partner?
                 </h2>
-                <p class="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base" data-aos="fade-up">
+                <p class="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base" >
                     We offer a unique ecosystem designed to support every step of your franchise journey. Here's how we
                     stand out.
                 </p>
             </div>
 
             <!-- Features Grid (no cards) -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12 text-left" data-aos="fade-up">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12 text-left"  >
                 <!-- Feature 1 -->
                 <div class="flex items-start gap-4 animate-fade-in-up">
                     <i class="ri-hand-coin-line text-3xl text-[#0d7377] flex-shrink-0"></i>
@@ -222,103 +224,105 @@
     </section>
 
     <!-- Franchise Models We Offer - Stylish ZigZag Layout -->
-    <section id="franchise-models" class="bg-[#f8f8f8] py-20 px-6 sm:px-10 md:px-16 relative">
-        <!-- Section Heading -->
-        <div class="text-center mb-16">
-            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800" data-aos="fade-up">
-                Franchise Models <span class="text-[#0d7377] font-semibold">We Offer</span>
-            </h2>
-            <p class="text-gray-600 text-base mt-2 max-w-xl mx-auto" data-aos="fade-up">
-                Choose from flexible franchise formats that suit your goals and investment plans. We offer end-to-end
-                support, so you can focus on growth.
-            </p>
-        </div>
-
-        <!-- Timeline Flow -->
-        <div class="relative border-x-2 border-dashed border-[#0d7377]/30 px-5 sm:px-8">
-
-            <!-- Kiosk Model -->
-            <div class="mb-12 relative group" data-aos="fade-right">
-                <div
-                    class="absolute -left-[41px] sm:-left-[53px] top-0 bg-[#0d7377] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition-transform duration-300">
-                    <i class="ri-building-line text-xl"></i>
-                </div>
-                <div class="bg-white rounded-xl shadow-md px-6 py-4 w-full max-w-xl animate-fade-in-up">
-                    <h3 class="text-xl font-semibold text-gray-800">Kiosk Model</h3>
-                    <p class="text-gray-600 text-sm mt-1">
-                        Ideal for malls, transit hubs, and high-footfall areas. Quick setup with minimal space
-                        requirements and a faster return on investment. Perfect for first-time business owners.
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">
-                        <i class="ri-layout-2-line mr-1"></i> Space: 80–100 sq. ft |
-                        <i class="ri-money-rupee-circle-line ml-4 mr-1"></i> Investment: ₹5–8 Lakhs
-                    </p>
-                </div>
+    <section id="franchise-models" class=" bg-[#f8f8f8] py-20 px-6 sm:px-10 md:px-16 relative">
+        <div class="container mx-auto">
+            <!-- Section Heading -->
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800" >
+                    Franchise Models <span class="text-[#0d7377] font-semibold">We Offer</span>
+                </h2>
+                <p class="text-gray-600 text-base mt-2 max-w-xl mx-auto" >
+                    Choose from flexible franchise formats that suit your goals and investment plans. We offer end-to-end
+                    support, so you can focus on growth.
+                </p>
             </div>
+        
+            <!-- Timeline Flow -->
+            <div class="relative border-x-2 border-dashed border-[#0d7377]/30 px-5 sm:px-8">
 
-            <!-- Retail Outlet -->
-            <div class="mb-12 relative group flex justify-end" data-aos="fade-left">
-                <div
-                    class="absolute -right-[41px] sm:-right-[53px] top-0 bg-[#0d7377] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition-transform duration-300">
-                    <i class="ri-store-line text-xl"></i>
+                <!-- Kiosk Model -->
+                <div class="mb-12 relative group" >
+                    <div
+                        class="absolute -left-[41px] sm:-left-[53px] top-0 bg-[#0d7377] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <i class="ri-building-line text-xl"></i>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md px-6 py-4 w-full max-w-xl animate-fade-in-up">
+                        <h3 class="text-xl font-semibold text-gray-800">Kiosk Model</h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Ideal for malls, transit hubs, and high-footfall areas. Quick setup with minimal space
+                            requirements and a faster return on investment. Perfect for first-time business owners.
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">
+                            <i class="ri-layout-2-line mr-1"></i> Space: 80–100 sq. ft |
+                            <i class="ri-money-rupee-circle-line ml-4 mr-1"></i> Investment: ₹5–8 Lakhs
+                        </p>
+                    </div>
                 </div>
-                <div
-                    class="bg-white rounded-xl shadow-md px-6 py-4 w-full max-w-xl animate-fade-in-up [animation-delay:.1s]">
-                    <h3 class="text-xl font-semibold text-gray-800">Retail Outlet</h3>
-                    <p class="text-gray-600 text-sm mt-1">
-                        A complete grocery store setup with modern interiors, comprehensive inventory, and full branding
-                        support.
-                        Suitable for entrepreneurs aiming at long-term stability and higher profitability.
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">
-                        <i class="ri-layout-4-line mr-1"></i> Space: 400–800 sq. ft |
-                        <i class="ri-money-rupee-circle-line ml-4 mr-1"></i> Investment: ₹12–20 Lakhs
-                    </p>
+
+                <!-- Retail Outlet -->
+                <div class="mb-12 relative group flex justify-end" >
+                    <div
+                        class="absolute -right-[41px] sm:-right-[53px] top-0 bg-[#0d7377] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <i class="ri-store-line text-xl"></i>
+                    </div>
+                    <div
+                        class="bg-white rounded-xl shadow-md px-6 py-4 w-full max-w-xl animate-fade-in-up [animation-delay:.1s]">
+                        <h3 class="text-xl font-semibold text-gray-800">Retail Outlet</h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            A complete grocery store setup with modern interiors, comprehensive inventory, and full branding
+                            support.
+                            Suitable for entrepreneurs aiming at long-term stability and higher profitability.
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">
+                            <i class="ri-layout-4-line mr-1"></i> Space: 400–800 sq. ft |
+                            <i class="ri-money-rupee-circle-line ml-4 mr-1"></i> Investment: ₹12–20 Lakhs
+                        </p>
+                    </div>
                 </div>
+
+                <!-- Delivery Partner -->
+                <div class="mb-12 relative group" >
+                    <div
+                        class="absolute -left-[41px] sm:-left-[53px] top-0 bg-[#0d7377] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <i class="ri-motorbike-line text-xl"></i>
+                    </div>
+                    <div
+                        class="bg-white rounded-xl shadow-md px-6 py-4 w-full max-w-xl animate-fade-in-up [animation-delay:.2s]">
+                        <h3 class="text-xl font-semibold text-gray-800">Delivery Partner</h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Join our last-mile delivery team and earn a flexible income. A great opportunity for individuals
+                            looking for low-investment entry into the grocery business with no space requirement.
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">
+                            <i class="ri-roadster-line mr-1"></i> No Space Needed |
+                            <i class="ri-money-rupee-circle-line ml-4 mr-1"></i> Investment: ₹1–2 Lakhs
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Master Franchise -->
+                <div class="relative group flex justify-end" >
+                    <div
+                        class="absolute -right-[41px] sm:-right-[53px] top-0 bg-[#0d7377] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <i class="ri-star-line text-xl"></i>
+                    </div>
+                    <div
+                        class="bg-white rounded-xl shadow-md px-6 py-4 w-full max-w-xl animate-fade-in-up [animation-delay:.3s]">
+                        <h3 class="text-xl font-semibold text-gray-800">Master Franchise</h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Take control of a large territory, manage multiple sub-franchisees, and lead regional
+                            operations.
+                            Ideal for seasoned business professionals aiming for a high-growth, leadership-driven
+                            opportunity.
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">
+                            <i class="ri-map-pin-line mr-1"></i> Regional Rights |
+                            <i class="ri-money-rupee-circle-line ml-4 mr-1"></i> Investment: ₹25 Lakhs+
+                        </p>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- Delivery Partner -->
-            <div class="mb-12 relative group" data-aos="fade-right">
-                <div
-                    class="absolute -left-[41px] sm:-left-[53px] top-0 bg-[#0d7377] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition-transform duration-300">
-                    <i class="ri-motorbike-line text-xl"></i>
-                </div>
-                <div
-                    class="bg-white rounded-xl shadow-md px-6 py-4 w-full max-w-xl animate-fade-in-up [animation-delay:.2s]">
-                    <h3 class="text-xl font-semibold text-gray-800">Delivery Partner</h3>
-                    <p class="text-gray-600 text-sm mt-1">
-                        Join our last-mile delivery team and earn a flexible income. A great opportunity for individuals
-                        looking for low-investment entry into the grocery business with no space requirement.
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">
-                        <i class="ri-roadster-line mr-1"></i> No Space Needed |
-                        <i class="ri-money-rupee-circle-line ml-4 mr-1"></i> Investment: ₹1–2 Lakhs
-                    </p>
-                </div>
-            </div>
-
-            <!-- Master Franchise -->
-            <div class="relative group flex justify-end" data-aos="fade-left">
-                <div
-                    class="absolute -right-[41px] sm:-right-[53px] top-0 bg-[#0d7377] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition-transform duration-300">
-                    <i class="ri-star-line text-xl"></i>
-                </div>
-                <div
-                    class="bg-white rounded-xl shadow-md px-6 py-4 w-full max-w-xl animate-fade-in-up [animation-delay:.3s]">
-                    <h3 class="text-xl font-semibold text-gray-800">Master Franchise</h3>
-                    <p class="text-gray-600 text-sm mt-1">
-                        Take control of a large territory, manage multiple sub-franchisees, and lead regional
-                        operations.
-                        Ideal for seasoned business professionals aiming for a high-growth, leadership-driven
-                        opportunity.
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">
-                        <i class="ri-map-pin-line mr-1"></i> Regional Rights |
-                        <i class="ri-money-rupee-circle-line ml-4 mr-1"></i> Investment: ₹25 Lakhs+
-                    </p>
-                </div>
-            </div>
-
         </div>
     </section>
 

@@ -9,7 +9,7 @@
   scroll-behavior: smooth;
 }
 
-@keyframes float {
+/* @keyframes float {
   0%,
   100% {
     transform: translateY(0);
@@ -36,7 +36,7 @@
 
 .animate-fade-in-left {
   animation: fadeInLeft 1.2s ease forwards;
-}
+} */
 
 /* @keyframes fadeInUp {
   0% {
