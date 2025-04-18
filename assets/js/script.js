@@ -31,7 +31,7 @@ const btnLink = document.getElementById("carousel-btn-link");
 
 const content = [
     {
-      title: "Start Your Franchise Journey <br> with BazaarPoint",
+      title: "Start Your Franchise Journey <br> with Mega Mart 99",
       desc: "Join a network of thriving franchise owners with low investment and high return opportunities.",
       btn: "Explore Franchise Models",
       link: "#franchise-models",
