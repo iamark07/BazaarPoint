@@ -35,46 +35,80 @@
 
 <body class="overflow-x-hidden">
 
-    <!-- Header section start-->
-    <header class="shadow-md sticky top-0 z-50 bg-[#fff5ed] backdrop-blur-xl px-6 md:px-10 transition-all duration-300">
-        <div class="container mx-auto py-4 flex items-center justify-between">
-            <!-- Logo -->
-            <div class="flex items-center gap-3">
-                <a href="index.html">
-                    <img src="assets/img/Mega-mart-99-logo.png" alt="Mega Mart 99 Logo" class="w-36 sm:w-44">
-                </a>
-            </div>
+    <!-- Page Loader -->
+    <div id="loader"
+        class="fixed inset-0 z-[999] flex items-center justify-center bg-gradient-to-br from-[#e8ffbb] to-white/70 backdrop-blur-xl">
+        <img src="assets/img/Mega-mart-99-logo-2.png" alt="Loading..."
+            class="w-20 sm:w-24 h-20 sm:h-24 animate-slide-logo" />
+    </div>
 
-            <!-- Desktop Menu -->
-            <nav class="hidden md:flex items-center gap-7 text-gray-700 font-medium">
-                <a href="index.html" class="text-[#ef7714] flex items-center gap-1 duration-200 text-sm font-semibold">
-                    <i class="ri-home-4-line font-semibold"></i> Home
-                </a>
-                <a href="about.html" class="hover:text-[#ef7714] flex items-center gap-1 duration-200 text-sm">
-                    <i class="ri-information-line"></i> About
-                </a>
-                <a href="contact.html" class="hover:text-[#ef7714] flex items-center gap-1 duration-200 text-sm">
-                    <i class="ri-contacts-line"></i> Contact
-                </a>
-            </nav>
-
-            <div class="flex gap-2 lg:gap-10">
-                <!-- Download Brochure Button -->
-                <a href="#"
-                    class="hidden md:flex ml-4 bg-[#ef7714] text-white text-sm px-5 py-3 rounded-full shadow-sm hover:bg-[#d26522] transition-all items-center gap-1">
-                    <i class="ri-download-2-line"></i> Download Brochure
-                </a>
-            </div>
-
-            <!-- Mobile Hamburger Icon -->
-            <div class="md:hidden">
-                <button id="menu-btn"
-                    class="text-3xl text-primary transition duration-200 bg-white p-1 border border-[#8ab82d]/40">
-                    <i class="ri-menu-line text-[#8ab82d]" id="menu-icon"></i>
-                </button>
-            </div>
+    <!-- Topbar Start -->
+    <div class="bg-[#64340b] text-gray-100 text-sm py-2 px-6 md:px-10 hidden md:flex items-center justify-between">
+        <div class="flex items-center gap-4">
+            <span class="flex items-center gap-1">
+                <i class="ri-phone-line text-base"></i> +91 98765 43210
+            </span>
+            <span class="hidden md:flex items-center gap-1">
+                <i class="ri-mail-line text-base"></i> info@megamart99.com
+            </span>
         </div>
+        <div class="hidden sm:flex items-center gap-3">
+            <a href="#" class="hover:text-gray-200 transition"><i class="ri-facebook-circle-fill text-lg"></i></a>
+            <a href="#" class="hover:text-gray-200 transition"><i class="ri-instagram-fill text-lg"></i></a>
+            <a href="#" class="hover:text-gray-200 transition"><i class="ri-linkedin-box-fill text-lg"></i></a>
+            <a href="#" class="hover:text-gray-200 transition"><i class="ri-whatsapp-fill text-lg"></i></a>
+        </div>
+    </div>
+    <!-- Topbar End -->
 
+    <!-- Header section start-->
+    <header class="sticky top-0 z-50">
+        <div
+            class="relative bg-gradient-to-br from-[#e8ffbb] to-white/70 backdrop-blur-xl px-6 md:px-10 transition-all duration-300 shadow-md  overflow-hidden">
+            <!-- Glow circle background -->
+            <div class="absolute -top-10 -left-10 w-60 h-60 bg-[#ff9e4f]/20 rounded-full blur-3xl z-0"></div>
+            <div class="absolute -bottom-10 -right-10 w-72 h-72 bg-[#ff9e4f]/10 rounded-full blur-3xl z-0"></div>
+
+            <div class="container mx-auto py-4 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-3 z-10">
+                    <a href="index.html">
+                        <img src="assets/img/Mega-mart-99-logo.png" alt="Mega Mart 99 Logo" class="w-36 sm:w-44">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center gap-7 text-gray-700 font-medium z-10">
+                    <a href="index.html"
+                        class="text-[#ef7714] flex items-center gap-1 duration-200 text-sm font-semibold">
+                        <i class="ri-home-4-line font-semibold"></i> Home
+                    </a>
+                    <a href="about.html" class="hover:text-[#ef7714] flex items-center gap-1 duration-200 text-sm">
+                        <i class="ri-information-line"></i> About
+                    </a>
+                    <a href="contact.html" class="hover:text-[#ef7714] flex items-center gap-1 duration-200 text-sm">
+                        <i class="ri-contacts-line"></i> Contact
+                    </a>
+                </nav>
+
+                <div class="flex gap-2 lg:gap-10 z-10">
+                    <!-- Download Brochure Button -->
+                    <a href="#"
+                        class="hidden md:flex ml-4 bg-[#ef7714] text-white text-sm px-5 py-3 rounded-full shadow-sm hover:bg-[#d26522] transition-all items-center gap-1">
+                        <i class="ri-download-2-line"></i> Download Brochure
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Icon -->
+                <div class="md:hidden z-10">
+                    <button id="menu-btn"
+                        class="text-3xl text-primary transition duration-200 bg-white p-1 border border-[#8ab82d]/40">
+                        <i class="ri-menu-line text-[#8ab82d]" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
         <!-- Slide-in Mobile Menu -->
         <div id="mobile-menu"
             class="fixed top-0 left-[-100%] h-[100dvh] w-full z-[100] transition-all duration-200 flex">
@@ -141,7 +175,7 @@
     <!-- Header section end -->
 
     <!-- Hero Carousel Section -->
-    <section class="relative w-full h-[100vh] overflow-hidden">
+    <section class="relative w-full h-[550px] md:h-[500px] overflow-hidden">
         <!-- Slides -->
         <div id="carouselSlides" class="relative h-full">
             <div class="absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out z-10 slide">
@@ -157,7 +191,7 @@
 
         <!-- Overlay Content -->
         <div
-            class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 z-40">
+            class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 z-40 mt-30">
             <div id="carousel-content" class="opacity-100 transition-opacity duration-700 ease-in-out">
                 <h1 id="carousel-heading" class="text-2xl sm:text-5xl font-semibold mb-4"></h1>
                 <p id="carousel-desc" class="text-sm sm:text-lg mb-6 text-center w-full"></p>
@@ -189,7 +223,7 @@
     </section>
 
     <!-- Why Choose Us Section Start-->
-    <section class="bg-[#f8f8f8] py-16 px-6 sm:px-10 md:px-16">
+    <section class="bg-gradient-to-br from-[#ebffc3] to-[#ffecdc] py-16 px-6 sm:px-10 md:px-16">
         <div class="container mx-auto text-center space-y-10">
             <!-- Heading -->
             <div class="space-y-3 pb-5">
@@ -444,7 +478,7 @@
             </div>
         </div>
     </section>
-    <!-- Franchise Models We Offer Section End -->
+    <!-- Franchise Models We Offer Section End -->    
 
     <!-- Why Partner With Us Section Start-->
     <section class="py-20 px-6 sm:px-10 md:px-16 bg-[#fcfcfc]">
@@ -465,7 +499,7 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Feature Item -->
                 <div
-                    class="bg-white transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up">
+                    class="bg-gradient-to-br from-[#f9ffed] to-[#ffefe3] transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up">
                     <div
                         class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#ffecde] text-[#ef7714] text-3xl shadow-lg">
                         <i class="ri-lightbulb-flash-line"></i>
@@ -477,7 +511,7 @@
 
                 <!-- Repeat similar blocks for other features -->
                 <div
-                    class="bg-white transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up [animation-delay:.1s]">
+                    class="bg-gradient-to-br from-[#f9ffed] to-[#ffefe3] transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up [animation-delay:.1s]">
                     <div
                         class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#ffecde] text-[#ef7714] text-3xl shadow-lg">
                         <i class="ri-customer-service-2-line"></i>
@@ -488,7 +522,7 @@
                 </div>
 
                 <div
-                    class="bg-white transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up [animation-delay:.2s]">
+                    class="bg-gradient-to-br from-[#f9ffed] to-[#ffefe3] transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up [animation-delay:.2s]">
                     <div
                         class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#ffecde] text-[#ef7714] text-3xl shadow-lg">
                         <i class="ri-global-line"></i>
@@ -499,7 +533,7 @@
                 </div>
 
                 <div
-                    class="bg-white transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up [animation-delay:.3s]">
+                    class="bg-gradient-to-br from-[#f9ffed] to-[#ffefe3] transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up [animation-delay:.3s]">
                     <div
                         class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#ffecde] text-[#ef7714] text-3xl shadow-lg">
                         <i class="ri-store-2-line"></i>
@@ -510,7 +544,7 @@
                 </div>
 
                 <div
-                    class="bg-white transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up [animation-delay:.4s]">
+                    class="bg-gradient-to-br from-[#f9ffed] to-[#ffefe3] transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up [animation-delay:.4s]">
                     <div
                         class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#ffecde] text-[#ef7714] text-3xl shadow-lg">
                         <i class="ri-rocket-line"></i>
@@ -521,7 +555,7 @@
                 </div>
 
                 <div
-                    class="bg-white transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up [animation-delay:.5s]">
+                    class="bg-gradient-to-br from-[#f9ffed] to-[#ffefe3] transition duration-300 rounded-2xl p-6 text-center shadow-md hover:scale-105 animate-fade-in-up [animation-delay:.5s]">
                     <div
                         class="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#ffecde] text-[#ef7714] text-3xl shadow-lg">
                         <i class="ri-user-shared-line"></i>
@@ -536,7 +570,7 @@
     <!-- Why Partner With Us Section End-->
 
     <!-- Support & Training Section Start -->
-    <section class="py-20 px-6 sm:px-10 md:px-16 bg-white">
+    <section class="py-20 px-6 sm:px-10 md:px-16 bg-[#f8f8f8]">
         <div class="container mx-auto">
             <!-- Heading -->
             <div class="text-center mb-14">
@@ -553,8 +587,8 @@
             <div class="space-y-8">
                 <!-- Item 1 -->
                 <div onclick="openModal(1)"
-                    class="group cursor-pointer flex sm:flex-row flex-col justify-center sm:justify-start items-center gap-4 sm:gap-6 bg-white px-6 py-5 rounded-xl border-l-8 border-[#c0c0c0] shadow hover:shadow-lg transition">
-                    <i class="ri-store-2-line text-5xl text-[#c0c0c0] group-hover:scale-110 transition"></i>
+                    class="group cursor-pointer flex sm:flex-row flex-col justify-center sm:justify-start items-center gap-4 sm:gap-6 bg-white px-6 py-5 rounded-xl border-l-8 border-[#ef7714] shadow hover:shadow-lg transition">
+                    <i class="ri-store-2-line text-5xl text-[#ef7714] group-hover:scale-110 transition"></i>
                     <div>
                         <h3 class="text-lg sm:text-xl font-semibold text-gray-800">Store Setup Assistance</h3>
                         <p class="text-gray-600 text-sm mt-1">From choosing your location to layout planning, we guide
@@ -565,8 +599,8 @@
 
                 <!-- Item 2 -->
                 <div onclick="openModal(2)"
-                    class="group cursor-pointer flex sm:flex-row flex-col justify-center sm:justify-start items-center gap-4 sm:gap-6 bg-white px-6 py-5 rounded-xl border-l-8 border-[#c0c0c0] shadow hover:shadow-lg transition">
-                    <i class="ri-megaphone-line text-5xl text-[#c0c0c0] group-hover:scale-110 transition"></i>
+                    class="group cursor-pointer flex sm:flex-row flex-col justify-center sm:justify-start items-center gap-4 sm:gap-6 bg-white px-6 py-5 rounded-xl border-l-8 border-[#ef7714] shadow hover:shadow-lg transition">
+                    <i class="ri-megaphone-line text-5xl text-[#ef7714] group-hover:scale-110 transition"></i>
                     <div>
                         <h3 class="text-lg sm:text-xl font-semibold text-gray-800">Marketing & Promotion</h3>
                         <p class="text-gray-600 text-sm mt-1">We help your business stand out through digital and local
@@ -577,8 +611,8 @@
 
                 <!-- Item 3 -->
                 <div onclick="openModal(3)"
-                    class="group cursor-pointer flex sm:flex-row flex-col justify-center sm:justify-start items-center gap-4 sm:gap-6 bg-white px-6 py-5 rounded-xl border-l-8 border-[#c0c0c0] shadow hover:shadow-lg transition">
-                    <i class="ri-team-line text-5xl text-[#c0c0c0] group-hover:scale-110 transition"></i>
+                    class="group cursor-pointer flex sm:flex-row flex-col justify-center sm:justify-start items-center gap-4 sm:gap-6 bg-white px-6 py-5 rounded-xl border-l-8 border-[#ef7714] shadow hover:shadow-lg transition">
+                    <i class="ri-team-line text-5xl text-[#ef7714] group-hover:scale-110 transition"></i>
                     <div>
                         <h3 class="text-lg sm:text-xl font-semibold text-gray-800">Staff Training</h3>
                         <p class="text-gray-600 text-sm mt-1">We provide hands-on training to ensure top-level
@@ -589,8 +623,8 @@
 
                 <!-- Item 4 -->
                 <div onclick="openModal(4)"
-                    class="group cursor-pointer flex sm:flex-row flex-col justify-center sm:justify-start items-center gap-4 sm:gap-6 bg-white px-6 py-5 rounded-xl border-l-8 border-[#c0c0c0] shadow hover:shadow-lg transition">
-                    <i class="ri-computer-line text-5xl text-[#c0c0c0] group-hover:scale-110 transition"></i>
+                    class="group cursor-pointer flex sm:flex-row flex-col justify-center sm:justify-start items-center gap-4 sm:gap-6 bg-white px-6 py-5 rounded-xl border-l-8 border-[#ef7714] shadow hover:shadow-lg transition">
+                    <i class="ri-computer-line text-5xl text-[#ef7714] group-hover:scale-110 transition"></i>
                     <div>
                         <h3 class="text-lg sm:text-xl font-semibold text-gray-800">POS & Billing Systems</h3>
                         <p class="text-gray-600 text-sm mt-1">Modern tools to manage billing, inventory, and performance
@@ -665,9 +699,9 @@
         </div>
     </section>
     <!-- Support & Training Section End -->
-
+    
     <!-- become franchise partner section start-->
-    <section class="bg-[#f8f8f8] py-20 px-6 sm:px-10 md:px-16" id="franchise-partner">
+    <section class="bg-[#fcfcfc] py-20 px-6 sm:px-10 md:px-16" id="franchise-partner">
         <div class="container mx-auto">
 
             <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 text-center">How to Become a Franchise Partner
@@ -678,12 +712,12 @@
                 with our support.
             </p>
 
-            <div class="relative mt-20 border-l-4 border-[#8ab82d] pl-6 space-y-12">
+            <div class="relative mt-20 border-l-4 border-[#ef7714] pl-6 space-y-12">
 
                 <!-- Step 1 -->
                 <div class="group relative">
                     <div
-                        class="absolute -left-[42px] top-0 w-8 h-8 bg-[#8ab82d] text-white flex justify-center items-center rounded-full transition-transform">
+                        class="absolute -left-[42px] top-0 w-8 h-8 bg-gradient-to-br from-[#ebffc3] to-[#ffecdc] text-[#ef7714] flex justify-center items-center rounded-full transition-transform">
                         1</div>
                     <h4 class="text-xl font-semibold text-gray-800">Step 1: Submit Your Application</h4>
                     <p class="text-gray-600 mt-2 text-sm">
@@ -695,7 +729,7 @@
                 <!-- Step 2 -->
                 <div class="group relative">
                     <div
-                        class="absolute -left-[42px] top-0 w-8 h-8 bg-[#8ab82d] text-white flex justify-center items-center rounded-full transition-transform">
+                        class="absolute -left-[42px] top-0 w-8 h-8 bg-gradient-to-br from-[#ebffc3] to-[#ffecdc] text-[#ef7714] flex justify-center items-center rounded-full transition-transform">
                         2</div>
                     <h4 class="text-xl font-semibold text-gray-800">Step 2: Initial Discussion</h4>
                     <p class="text-gray-600 mt-2 text-sm">
@@ -707,7 +741,7 @@
                 <!-- Step 3 -->
                 <div class="group relative">
                     <div
-                        class="absolute -left-[42px] top-0 w-8 h-8 bg-[#8ab82d] text-white flex justify-center items-center rounded-full transition-transform">
+                        class="absolute -left-[42px] top-0 w-8 h-8 bg-gradient-to-br from-[#ebffc3] to-[#ffecdc] text-[#ef7714] flex justify-center items-center rounded-full transition-transform">
                         3</div>
                     <h4 class="text-xl font-semibold text-gray-800">Step 3: Visit & Evaluation</h4>
                     <p class="text-gray-600 mt-2 text-sm">
@@ -719,7 +753,7 @@
                 <!-- Step 4 -->
                 <div class="group relative">
                     <div
-                        class="absolute -left-[42px] top-0 w-8 h-8 bg-[#8ab82d] text-white flex justify-center items-center rounded-full transition-transform">
+                        class="absolute -left-[42px] top-0 w-8 h-8 bg-gradient-to-br from-[#ebffc3] to-[#ffecdc] text-[#ef7714] flex justify-center items-center rounded-full transition-transform">
                         4</div>
                     <h4 class="text-xl font-semibold text-gray-800">Step 4: Agreement & Onboarding</h4>
                     <p class="text-gray-600 mt-2 text-sm">
@@ -731,7 +765,7 @@
                 <!-- Step 5 -->
                 <div class="group relative">
                     <div
-                        class="absolute -left-[42px] top-0 w-8 h-8 bg-[#8ab82d] text-white flex justify-center items-center rounded-full transition-transform">
+                        class="absolute -left-[42px] top-0 w-8 h-8 bg-gradient-to-br from-[#ebffc3] to-[#ffecdc] text-[#ef7714] flex justify-center items-center rounded-full transition-transform">
                         5</div>
                     <h4 class="text-xl font-semibold text-gray-800">Step 5: Grand Launch</h4>
                     <p class="text-gray-600 mt-2 text-sm">
@@ -755,203 +789,203 @@
             <div class="owl-carousel franchise-logos owl-theme">
                 <!-- Logo 1 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/1.jpg" alt="Associated Logo 1" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/1.jpg" alt="Associated Logo 1"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 2 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/2.png" alt="Associated Logo 2" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/2.png" alt="Associated Logo 2"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 3 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/3.png" alt="Associated Logo 3" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/3.png" alt="Associated Logo 3"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 4 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/4.png" alt="Associated Logo 4" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/4.png" alt="Associated Logo 4"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 5 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/5.png" alt="Associated Logo 5" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/5.png" alt="Associated Logo 5"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 6 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/6.png" alt="Associated Logo 6" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/6.png" alt="Associated Logo 6"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 7 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/7.png" alt="Associated Logo 7" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/7.png" alt="Associated Logo 7"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 8 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/8.png" alt="Associated Logo 8" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/8.png" alt="Associated Logo 8"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 9 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/9.png" alt="Associated Logo 9" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/9.png" alt="Associated Logo 9"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 10 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/10.png" alt="Associated Logo 10" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/10.png" alt="Associated Logo 10"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 11 -->
                 <!-- <div class="p-6 flex items-center justify-center">
                     <img src="assets/img/associated-brand/11.png" alt="Associated Logo 11"
-                        class="w-full h-8 md:h-32" loading="lazy">
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div> -->
                 <!-- Logo 12 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/12.png" alt="Associated Logo 12" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/12.png" alt="Associated Logo 12"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 13 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/13.png" alt="Associated Logo 13" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/13.png" alt="Associated Logo 13"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 14 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/14.png" alt="Associated Logo 14" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/14.png" alt="Associated Logo 14"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 15 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/15.png" alt="Associated Logo 15" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/15.png" alt="Associated Logo 15"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 16 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/16.png" alt="Associated Logo 16" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/16.png" alt="Associated Logo 16"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 17 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/17.png" alt="Associated Logo 17" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/17.png" alt="Associated Logo 17"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 18 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/18.png" alt="Associated Logo 18" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/18.png" alt="Associated Logo 18"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 19 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/19.png" alt="Associated Logo 19" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/19.png" alt="Associated Logo 19"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 20 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/20.png" alt="Associated Logo 20" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/20.png" alt="Associated Logo 20"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 21 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/21.png" alt="Associated Logo 21" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/21.png" alt="Associated Logo 21"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 22 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/22.png" alt="Associated Logo 22" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/22.png" alt="Associated Logo 22"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 23 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/23.png" alt="Associated Logo 23" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/23.png" alt="Associated Logo 23"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 24 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/24.png" alt="Associated Logo 24" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/24.png" alt="Associated Logo 24"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 25 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/25.png" alt="Associated Logo 25" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/25.png" alt="Associated Logo 25"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 26 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/26.png" alt="Associated Logo 26" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/26.png" alt="Associated Logo 26"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 27 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/27.png" alt="Associated Logo 27" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/27.png" alt="Associated Logo 27"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 28 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/28.png" alt="Associated Logo 28" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/28.png" alt="Associated Logo 28"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 29 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/29.png" alt="Associated Logo 29" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/29.png" alt="Associated Logo 29"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 30 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/30.png" alt="Associated Logo 30" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/30.png" alt="Associated Logo 30"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 31 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/31.png" alt="Associated Logo 31" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/31.png" alt="Associated Logo 31"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 32 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/32.png" alt="Associated Logo 32" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/32.png" alt="Associated Logo 32"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 33 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/33.png" alt="Associated Logo 33" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/33.png" alt="Associated Logo 33"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 34 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/34.png" alt="Associated Logo 34" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/34.png" alt="Associated Logo 34"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 35 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/35.png" alt="Associated Logo 35" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/35.png" alt="Associated Logo 35"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 36 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/36.png" alt="Associated Logo 36" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/36.png" alt="Associated Logo 36"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 37 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/37.png" alt="Associated Logo 37" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/37.png" alt="Associated Logo 37"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 38 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/38.png" alt="Associated Logo 38" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/38.png" alt="Associated Logo 38"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 39 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/39.png" alt="Associated Logo 39" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/39.png" alt="Associated Logo 39"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
                 <!-- Logo 40 -->
                 <div class="p-6 flex items-center justify-center">
-                    <img src="assets/img/associated-brand/40.png" alt="Associated Logo 40" class="w-full h-8 md:h-32"
-                        loading="lazy">
+                    <img src="assets/img/associated-brand/40.png" alt="Associated Logo 40"
+                        class="h-full w-auto object-contain" loading="lazy">
                 </div>
             </div>
         </div>
@@ -1019,7 +1053,7 @@
     <!-- tesimonal section end -->
 
     <!-- Newsletter Subscription Section -->
-    <section class="bg-[#fff7f0] py-16">
+    <section class="bg-gradient-to-br from-[#ebffc3] to-[#ffecdc] py-16">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">Subscribe to Get Franchise Updates
                 <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span>
@@ -1029,7 +1063,7 @@
 
             <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <input type="email" placeholder="Enter your email"
-                    class="w-full sm:w-96 px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8ab82d] transition"
+                    class="w-full sm:w-96 px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ef7714] transition"
                     required />
                 <button type="submit"
                     class="px-6 py-3 bg-[#ef7714] hover:bg-[#d26522] text-white font-semibold rounded-full transition duration-300">
@@ -1037,7 +1071,7 @@
                 </button>
             </form>
 
-            <p class="mt-4 text-sm text-gray-500">We respect your privacy. No spam ever.</p>
+            <p class="mt-4 text-sm text-gray-700">We respect your privacy. No spam ever.</p>
         </div>
     </section>
 
@@ -1116,9 +1150,13 @@
 
 
     <!-- footer section start -->
-    <footer class="relative bg-[#fff7f0] text-gray-800 shadow-inner overflow-hidden">
+    <footer
+        class="relative bg-gradient-to-br from-[#e8ffbb] to-white/70 backdrop-blur-xl text-gray-800 shadow-inner overflow-hidden">
         <div class="container mx-auto py-14 px-6 md:px-16">
 
+            <!-- Glow circle background -->
+            <div class="absolute -top-10 -left-10 w-60 h-60 bg-[#ff9e4f]/20 rounded-full blur-3xl z-0"></div>
+            <div class="absolute -bottom-10 -right-10 w-72 h-72 bg-[#ff9e4f]/10 rounded-full blur-3xl z-0"></div>
             <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
 
                 <!-- Brand -->
@@ -1251,6 +1289,7 @@
     </script>
 
     <!-- custom js -->
+    <script src="assets/js/custom.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

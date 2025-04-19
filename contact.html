@@ -35,47 +35,78 @@
 
 <body class="overflow-x-hidden">
 
-    <!-- Header section start-->
-    <header class="shadow-md sticky top-0 z-50 bg-[#fff5ed] backdrop-blur-xl px-6 md:px-10 transition-all duration-300">
-        <div class="container mx-auto py-4 flex items-center justify-between">
-            <!-- Logo -->
-            <div class="flex items-center gap-3">
-                <a href="index.html">
-                    <img src="assets/img/Mega-mart-99-logo.png" alt="Mega Mart 99 Logo" class="w-36 sm:w-44">
-                </a>
-            </div>
+    <!-- Page Loader -->
+    <div id="loader" class="fixed inset-0 z-[999] flex items-center justify-center bg-gradient-to-br from-[#e8ffbb] to-white/70 backdrop-blur-xl">
+        <img src="assets/img/Mega-mart-99-logo-2.png" alt="Loading..." class="w-20 sm:w-24 h-20 sm:h-24 animate-slide-logo" />
+    </div>
 
-            <!-- Desktop Menu -->
-            <nav class="hidden md:flex items-center gap-7 text-gray-700 font-medium">
-                <a href="index.html" class="hover:text-[#ef7714] flex items-center gap-1 duration-200 text-sm">
-                    <i class="ri-home-4-line"></i> Home
-                </a>
-                <a href="about.html" class="hover:text-[#ef7714] flex items-center gap-1 duration-200 text-sm">
-                    <i class="ri-information-line"></i> About
-                </a>
-                <a href="contact.html"
-                    class="text-[#ef7714] font-semibold flex items-center gap-1 duration-200 text-sm">
-                    <i class="ri-contacts-line font-semibold"></i> Contact
-                </a>
-            </nav>
-
-            <div class="flex gap-2 lg:gap-10">
-                <!-- Download Brochure Button -->
-                <a href="#"
-                    class="hidden md:flex ml-4 bg-[#ef7714] text-white text-sm px-5 py-3 rounded-full shadow-sm hover:bg-[#d26522] transition-all items-center gap-1">
-                    <i class="ri-download-2-line"></i> Download Brochure
-                </a>
-            </div>
-
-            <!-- Mobile Hamburger Icon -->
-            <div class="md:hidden">
-                <button id="menu-btn"
-                    class="text-3xl text-primary transition duration-200 bg-white p-1 border border-[#8ab82d]/40">
-                    <i class="ri-menu-line text-[#8ab82d]" id="menu-icon"></i>
-                </button>
-            </div>
+    <!-- Topbar Start -->
+    <div class="bg-[#64340b] text-gray-100 text-sm py-2 px-6 md:px-10 hidden md:flex items-center justify-between">
+        <div class="flex items-center gap-4">
+            <span class="flex items-center gap-1">
+                <i class="ri-phone-line text-base"></i> +91 98765 43210
+            </span>
+            <span class="hidden md:flex items-center gap-1">
+                <i class="ri-mail-line text-base"></i> info@megamart99.com
+            </span>
         </div>
+        <div class="hidden sm:flex items-center gap-3">
+            <a href="#" class="hover:text-gray-200 transition"><i class="ri-facebook-circle-fill text-lg"></i></a>
+            <a href="#" class="hover:text-gray-200 transition"><i class="ri-instagram-fill text-lg"></i></a>
+            <a href="#" class="hover:text-gray-200 transition"><i class="ri-linkedin-box-fill text-lg"></i></a>
+            <a href="#" class="hover:text-gray-200 transition"><i class="ri-whatsapp-fill text-lg"></i></a>
+        </div>
+    </div>
+    <!-- Topbar End -->
 
+    <!-- Header section start-->
+    <header class="sticky top-0 z-50">
+        <div
+            class="relative bg-gradient-to-br from-[#e8ffbb] to-white/70 backdrop-blur-xl px-6 md:px-10 transition-all duration-300 shadow-md  overflow-hidden">
+            <!-- Glow circle background -->
+            <div class="absolute -top-10 -left-10 w-60 h-60 bg-[#ff9e4f]/20 rounded-full blur-3xl z-0"></div>
+            <div class="absolute -bottom-10 -right-10 w-72 h-72 bg-[#ff9e4f]/10 rounded-full blur-3xl z-0"></div>
+
+            <div class="container mx-auto py-4 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-3 z-10">
+                    <a href="index.html">
+                        <img src="assets/img/Mega-mart-99-logo.png" alt="Mega Mart 99 Logo" class="w-36 sm:w-44">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center gap-7 text-gray-700 font-medium z-10">
+                    <a href="index.html"
+                        class="hover:text-[#ef7714] flex items-center gap-1 duration-200 text-sm">
+                        <i class="ri-home-4-line"></i> Home
+                    </a>
+                    <a href="about.html" class="hover:text-[#ef7714] flex items-center gap-1 duration-200 text-sm">
+                        <i class="ri-information-line"></i> About
+                    </a>
+                    <a href="contact.html" class="text-[#ef7714] flex items-center gap-1 duration-200 text-sm font-semibold">
+                        <i class="ri-contacts-line font-semibold"></i> Contact
+                    </a>
+                </nav>
+
+                <div class="flex gap-2 lg:gap-10 z-10">
+                    <!-- Download Brochure Button -->
+                    <a href="#"
+                        class="hidden md:flex ml-4 bg-[#ef7714] text-white text-sm px-5 py-3 rounded-full shadow-sm hover:bg-[#d26522] transition-all items-center gap-1">
+                        <i class="ri-download-2-line"></i> Download Brochure
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Icon -->
+                <div class="md:hidden z-10">
+                    <button id="menu-btn"
+                        class="text-3xl text-primary transition duration-200 bg-white p-1 border border-[#8ab82d]/40">
+                        <i class="ri-menu-line text-[#8ab82d]" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
         <!-- Slide-in Mobile Menu -->
         <div id="mobile-menu"
             class="fixed top-0 left-[-100%] h-[100dvh] w-full z-[100] transition-all duration-200 flex">
@@ -91,7 +122,8 @@
                 </div>
                 <ul class="flex flex-col gap-4 p-6 text-gray-700 font-medium">
                     <li>
-                        <a href="index.html" class="hover:text-primary flex items-center gap-2 hover:text-[#ef7714]">
+                        <a href="index.html"
+                            class="flex items-center gap-2 hover:text-[#ef7714]">
                             <i class="ri-home-4-line"></i> Home
                         </a>
                     </li>
@@ -101,7 +133,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html" class="text-[#ef7714] font-semibold flex items-center gap-2">
+                        <a href="contact.html" class="text-[#ef7714] flex items-center gap-2 font-semibold">
                             <i class="ri-contacts-line font-semibold"></i> Contact
                         </a>
                     </li>
@@ -147,6 +179,15 @@
         <h1 class="text-xl sm:text-2xl font-semibold text-black">Franchise Inquiry</h1>
         <p class="text-gray-600 text-sm mt-2"><a href="index.html">Home</a> / <a href="#inquery_form">Contact</a></p>
     </div>
+
+    <!-- Google Map Section -->
+    <section class="w-full h-[350px] md:h-[400px] lg:h-[500px] mb-10">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6206519503127!2d72.85616487499904!3d19.124976682094452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b75a5b52d8cd%3A0x98f05c121b6f84d6!2sAndheri%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1713342072571!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="shadow-md">
+        </iframe>
+    </section>
 
     <!-- Contact + Inquiry Section -->
     <section class="py-16 px-6 md:px-10 lg:px-20 bg-white text-gray-800">
@@ -199,7 +240,7 @@
             </div>
 
             <!-- Inquiry Form -->
-            <div class="bg-[#fff5ed] px-6 py-10 lg:p-10 rounded-2xl shadow-xl" id="inquery_form">
+            <div class="bg-gradient-to-br from-[#f9ffed] to-[#ffefe3] px-6 py-10 lg:p-10 rounded-2xl shadow-xl" id="inquery_form">
                 <h3 class="text-2xl font-bold text-center text-black mb-6">Inquiry Form</h3>
                 <form class="space-y-4 lg:space-y-6">
                     <!-- Full Name -->
@@ -246,22 +287,15 @@
             </div>
         </div>
     </section>
-    
-    <!-- Google Map Section -->
-    <section class="w-full h-[350px] md:h-[400px] lg:h-[500px] my-5 mb-10">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6206519503127!2d72.85616487499904!3d19.124976682094452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b75a5b52d8cd%3A0x98f05c121b6f84d6!2sAndheri%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1713342072571!5m2!1sen!2sin"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" class="shadow-md">
-        </iframe>
-    </section>
-
-
 
     <!-- footer section start -->
-    <footer class="relative bg-[#fff7f0] text-gray-800 shadow-inner overflow-hidden">
+    <footer
+        class="relative bg-gradient-to-br from-[#e8ffbb] to-white/70 backdrop-blur-xl text-gray-800 shadow-inner overflow-hidden">
         <div class="container mx-auto py-14 px-6 md:px-16">
 
+            <!-- Glow circle background -->
+            <div class="absolute -top-10 -left-10 w-60 h-60 bg-[#ff9e4f]/20 rounded-full blur-3xl z-0"></div>
+            <div class="absolute -bottom-10 -right-10 w-72 h-72 bg-[#ff9e4f]/10 rounded-full blur-3xl z-0"></div>
             <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
 
                 <!-- Brand -->
@@ -343,7 +377,7 @@
     <!-- footer section end -->
 
     <!-- custom js -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
