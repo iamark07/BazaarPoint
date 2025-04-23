@@ -53,6 +53,14 @@
 }
 
 /* frnchise partner section logo section */
-.franchise-logos.owl-theme .owl-nav.disabled + .owl-dots {
+.franchise-logos.owl-theme .owl-dots {
   display: none !important;
+}
+
+.franchise-logos .owl-nav button.owl-prev{
+  background: none !important;
+}
+
+.franchise-logos .owl-nav button.owl-next{
+  background: none !important;
 }
