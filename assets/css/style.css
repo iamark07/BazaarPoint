@@ -29,6 +29,38 @@
   animation: slide-logo 1.5s ease-in-out infinite;
 }
 
+
+@media screen and (min-width:340px) and (max-width:420px){
+  .slide-mobile img {
+    object-position: -425px 0px;
+  }
+}
+
+@media screen and (min-width:421px) and (max-width:479px){
+  .slide-mobile img {
+    object-position: -380px 0px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:540px){
+  .slide-mobile img {
+    object-position: -300px 0px;
+  }
+}
+
+@media screen and (min-width:541px) and (max-width:590px){
+  .slide-mobile img {
+    object-position: -230px 0px;
+  }
+}
+
+@media screen and (min-width:591px) and (max-width:640px){
+  .slide-mobile img {
+    object-position: -200px 0px;
+  }
+}
+
+
 /* testimonal section */
 
 .franchise_partner_testimonal .owl-carousel .owl-stage-outer .owl-stage {
