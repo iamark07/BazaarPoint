@@ -42,8 +42,46 @@
             class="w-20 sm:w-24 h-20 sm:h-24 animate-slide-logo" />
     </div>
 
+    <!-- WhatsApp popup -->
+    <div class="fixed bottom-6 right-4 sm:right-6 z-20">
+        <!-- WhatsApp Button -->
+        <button id="whatsappBtn"
+            class="bg-green-500 text-white w-10 h-10 sm:w-16 text-xl6sm: sm:h-16 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition">
+            <i class="ri-whatsapp-line text-2xl sm:text-4xl"></i>
+        </button>
+
+        <!-- WhatsApp Popup -->
+        <div id="whatsappPopup"
+            class="hidden mt-3 p-4 bg-white rounded-xl shadow-xl w-64 text-sm text-gray-800 animate-fade-in">
+            <p class="font-semibold">Chat on WhatsApp</p>
+            <p class="text-gray-500 mt-1">+91 75426 7XXXX</p>
+            <a href="https://wa.me/91754267XXXX" target="_blank"
+                class="block mt-3 text-center bg-green-500 text-white py-2 rounded hover:bg-green-600">
+                Start Chat
+            </a>
+        </div>
+    </div>
+    <!-- Call us now popup-->
+    <div class="fixed bottom-6 left-4 sm:left-6 z-20">
+        <!-- Call Us Button -->
+        <button id="callBtn"
+            class="bg-yellow-500 text-white w-10 h-10 sm:w-16 text-xl6sm: sm:h-16 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition">
+            <i class="ri-phone-line text-xl sm:text-3xl"></i>
+        </button>
+
+        <!-- Call Popup -->
+        <div id="callPopup"
+            class="hidden mt-3 p-4 bg-white rounded-xl shadow-xl w-64 text-sm text-gray-800 animate-fade-in text-center">
+            <p class="font-semibold">Call Us Now</p>
+            <p class="text-gray-500 mt-1">We're here to help</p>
+            <a href="tel:+91754267XXXX" class="block mt-3 bg-yellow-500 text-white py-2 rounded hover:bg-yellow-600">
+                Call +91 75426 7XXXX
+            </a>
+        </div>
+    </div>
+
     <!-- Topbar Start -->
-    <div class="bg-[#242911] hidden md:flex py-2 px-6 md:px-10">
+    <div class="bg-[#12470b] hidden md:flex py-2 px-6 md:px-10">
         <div class="container mx-auto text-gray-100 text-sm flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <span class="flex items-center gap-1">
@@ -237,6 +275,41 @@
         </div>
     </section>
 
+    <!-- Stats Counter Section -->
+    <section id="stats" class="bg-white py-12">
+        <div class="container mx-auto px-5 sm:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+
+            <!-- Stat Item -->
+            <div class="flex flex-col items-center">
+                <i class="ri-map-pin-line text-orange-500 text-3xl mb-2"></i>
+                <h3 class="text-2xl font-bold text-gray-800 counter" data-target="120">0</h3>
+                <p class="text-sm text-gray-600 mt-1">Growing Cities</p>
+            </div>
+
+            <!-- Stat Item -->
+            <div class="flex flex-col items-center">
+                <i class="ri-store-2-line text-orange-500 text-3xl mb-2"></i>
+                <h3 class="text-2xl font-bold text-gray-800 counter" data-target="1800">0</h3>
+                <p class="text-sm text-gray-600 mt-1">Top Brands</p>
+            </div>
+
+            <!-- Stat Item -->
+            <div class="flex flex-col items-center">
+                <i class="ri-box-3-line text-orange-500 text-3xl mb-2"></i>
+                <h3 class="text-2xl font-bold text-gray-800 counter" data-target="25000">0</h3>
+                <p class="text-sm text-gray-600 mt-1">Diverse Products</p>
+            </div>
+
+            <!-- Stat Item -->
+            <div class="flex flex-col items-center">
+                <i class="ri-user-smile-line text-orange-500 text-4xl mb-2"></i>
+                <h3 class="text-2xl font-bold text-gray-800 counter" data-target="120000">0</h3>
+                <p class="text-sm text-gray-600 mt-1">Happy Customers</p>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Why Choose Us Section Start-->
     <section class="bg-[#f8f8f8] py-20 px-6 sm:px-10 md:px-16">
         <div class="container mx-auto text-center space-y-16">
@@ -244,7 +317,7 @@
             <div class="space-y-4 pb-6">
                 <h2 class="text-2xl sm:text-4xl font-bold text-gray-800 tracking-tight">
                     Why Choose Mega Mart 99 as Your Franchise Partner?
-                    <span class="block w-24 h-1 bg-[#ef7714] mx-auto mt-3 rounded-full"></span>
+                    <!-- <span class="block w-24 h-1 bg-[#ef7714] mx-auto mt-3 rounded-full"></span> -->
                 </h2>
                 <p class="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
                     We offer a unique ecosystem designed to support every step of your franchise journey. Here's how we
@@ -260,16 +333,16 @@
 
                     <!-- Card 1 -->
                     <div
-                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#24d9ca] lg:h-fit">
+                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#de4e1f] lg:h-fit">
                         <div class="absolute -top-3 -left-3 z-10">
                             <div
-                                class="w-10 h-10 rounded-full bg-[#24d9ca] text-white font-bold flex items-center justify-center shadow-md">
+                                class="w-10 h-10 rounded-full bg-[#de4e1f] text-white font-bold flex items-center justify-center shadow-md">
                                 1</div>
                         </div>
                         <div class="flex justify-center mb-4">
                             <div
-                                class="bg-[#e2fffd] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
-                                <i class="ri-hand-coin-line text-4xl text-[#24d9ca]"></i>
+                                class="bg-[#fff0eb] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
+                                <i class="ri-hand-coin-line text-4xl text-[#de4e1f]"></i>
                             </div>
                         </div>
                         <h4 class="font-semibold text-gray-800 mb-2">Low Investment, High Returns</h4>
@@ -279,16 +352,16 @@
 
                     <!-- Card 2 -->
                     <div
-                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#1db31d] lg:h-fit lg:mt-28">
+                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#feb713] lg:h-fit lg:mt-28">
                         <div class="absolute -top-3 -left-3 z-10">
                             <div
-                                class="w-10 h-10 rounded-full bg-[#1db31d] text-white font-bold flex items-center justify-center shadow-md">
+                                class="w-10 h-10 rounded-full bg-[#feb713] text-white font-bold flex items-center justify-center shadow-md">
                                 2</div>
                         </div>
                         <div class="flex justify-center mb-4">
                             <div
-                                class="bg-[#ddffdd] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
-                                <i class="ri-team-line text-4xl text-[#1db31d]"></i>
+                                class="bg-[#fff8e6] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
+                                <i class="ri-team-line text-4xl text-[#feb713]"></i>
                             </div>
                         </div>
                         <h4 class="font-semibold text-gray-800 mb-2">Strong Support System</h4>
@@ -298,16 +371,16 @@
 
                     <!-- Card 3 -->
                     <div
-                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#d3b22c] lg:h-fit lg:mt-44">
+                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#92bf37] lg:h-fit lg:mt-44">
                         <div class="absolute -top-3 -left-3 z-10">
                             <div
-                                class="w-10 h-10 rounded-full bg-[#d3b22c] text-white font-bold flex items-center justify-center shadow-md">
+                                class="w-10 h-10 rounded-full bg-[#92bf37] text-white font-bold flex items-center justify-center shadow-md">
                                 3</div>
                         </div>
                         <div class="flex justify-center mb-4">
                             <div
-                                class="bg-[#fff8de] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
-                                <i class="ri-map-pin-line text-4xl text-[#d3b22c]"></i>
+                                class="bg-[#f6ffe4] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
+                                <i class="ri-map-pin-line text-4xl text-[#92bf37]"></i>
                             </div>
                         </div>
                         <h4 class="font-semibold text-gray-800 mb-2">Pan-India Expansion</h4>
@@ -317,16 +390,16 @@
 
                     <!-- Card 4 -->
                     <div
-                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#d3b22c] lg:h-fit lg:mt-44">
+                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#92bf37] lg:h-fit lg:mt-44">
                         <div class="absolute -top-3 -left-3 z-10">
                             <div
-                                class="w-10 h-10 rounded-full bg-[#d3b22c] text-white font-bold flex items-center justify-center shadow-md">
+                                class="w-10 h-10 rounded-full bg-[#92bf37] text-white font-bold flex items-center justify-center shadow-md">
                                 4</div>
                         </div>
                         <div class="flex justify-center mb-4">
                             <div
-                                class="bg-[#fff8de] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
-                                <i class="ri-bar-chart-box-line text-4xl text-[#d3b22c]"></i>
+                                class="bg-[#f6ffe4] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
+                                <i class="ri-bar-chart-box-line text-4xl text-[#92bf37]"></i>
                             </div>
                         </div>
                         <h4 class="font-semibold text-gray-800 mb-2">Smart Business Analytics</h4>
@@ -336,16 +409,16 @@
 
                     <!-- Card 5 -->
                     <div
-                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#1db31d] lg:h-fit lg:mt-32">
+                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#feb713] lg:h-fit lg:mt-32">
                         <div class="absolute -top-3 -left-3 z-10">
                             <div
-                                class="w-10 h-10 rounded-full bg-[#1db31d] text-white font-bold flex items-center justify-center shadow-md">
+                                class="w-10 h-10 rounded-full bg-[#feb713] text-white font-bold flex items-center justify-center shadow-md">
                                 5</div>
                         </div>
                         <div class="flex justify-center mb-4">
                             <div
-                                class="bg-[#ddffdd] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
-                                <i class="ri-lightbulb-flash-line text-4xl text-[#1db31d]"></i>
+                                class="bg-[#fff8e6] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
+                                <i class="ri-lightbulb-flash-line text-4xl text-[#feb713]"></i>
                             </div>
                         </div>
                         <h4 class="font-semibold text-gray-800 mb-2">Innovative Business Model</h4>
@@ -355,16 +428,16 @@
 
                     <!-- Card 6 -->
                     <div
-                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#24d9ca] lg:h-fit">
+                        class="relative group bg-[#fffdfc] rounded-2xl shadow-xl p-6 lg:py-6 lg:px-3 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#de4e1f] lg:h-fit">
                         <div class="absolute -top-3 -left-3 z-10">
                             <div
-                                class="w-10 h-10 rounded-full bg-[#24d9ca] text-white font-bold flex items-center justify-center shadow-md">
+                                class="w-10 h-10 rounded-full bg-[#de4e1f] text-white font-bold flex items-center justify-center shadow-md">
                                 6</div>
                         </div>
                         <div class="flex justify-center mb-4">
                             <div
-                                class="bg-[#e2fffd] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
-                                <i class="ri-award-line text-4xl text-[#24d9ca]"></i>
+                                class="bg-[#fff0eb] w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition">
+                                <i class="ri-award-line text-4xl text-[#de4e1f]"></i>
                             </div>
                         </div>
                         <h4 class="font-semibold text-gray-800 mb-2">Trusted Brand Identity</h4>
@@ -376,13 +449,13 @@
 
             <!-- CTA -->
             <div class="pt-12 text-center max-w-2xl mx-auto space-y-4">
-                <h3 class="text-2xl sm:text-3xl font-bold text-gray-800">
+                <!-- <h3 class="text-2xl sm:text-3xl font-bold text-gray-800">
                     Ready to Start Your Franchise Journey?
                 </h3>
                 <p class="text-gray-600 text-base sm:text-lg">
                     Join hands with <span class="text-[#ef7714] font-semibold">Mega Mart 99</span> and grow with a brand
                     that believes in strong partnerships and shared success.
-                </p>
+                </p> -->
                 <a href="contact.html"
                     class="inline-flex items-center gap-2 bg-[#ef7714] text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:bg-[#d26522] transition duration-300">
                     <i class="ri-phone-line text-lg"></i>
@@ -401,8 +474,9 @@
             <div class="relative">
                 <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="Our Brand"
                     class="rounded-xl shadow-lg w-full h-auto md:h-full object-cover" loading="lazy">
-                <div class="absolute flex items-center gap-2 -bottom-5 -right-5 bg-[#3e7911] text-white px-4 py-2 rounded-lg text-sm shadow-lg">
-                    <img src="assets/img/trusted_img.png" alt="" class="w-10"> Trusted by 1000+ Customers
+                <div
+                    class="absolute flex flex-col items-center gap-2 -bottom-5 -right-5 bg-[#3e7911] text-white px-4 py-2 text-[10px] shadow-lg">
+                    <img src="assets/img/trusted_img.png" alt="" class="w-8"> Trusted by 100000+ Customers
                 </div>
             </div>
 
@@ -411,37 +485,58 @@
                 <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">
                     About Our Brand
                 </h2>
-
-                <!-- Bullet Points with Icons -->
-                <ul class="space-y-3">
-                    <li class="flex items-center gap-3">
-                        <i class="ri-rocket-2-line text-gray-700 text-2xl mt-1"></i>
-                        <span class="text-gray-700">10+ Years of Industry Experience</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <i class="ri-hand-heart-line text-gray-700 text-2xl mt-1"></i>
-                        <span class="text-gray-700">Customer-Centric Approach & Ethical Practices</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <i class="ri-global-line text-gray-700 text-2xl mt-1"></i>
-                        <span class="text-gray-700">Rapid Expansion Across India</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <i class="ri-team-line text-gray-700 text-2xl mt-1"></i>
-                        <span class="text-gray-700">Dedicated Franchise Support Team</span>
-                    </li>
-                </ul>
-                <p class="text-gray-600 text-base leading-relaxed mt-6">
+                <p class="text-gray-600 text-base leading-relaxed mb-6">
                     We are a next-gen retail brand committed to providing top-quality products and unmatched customer
                     service. Our vision is to build a nationwide presence by empowering passionate entrepreneurs through
                     our franchise model.
                 </p>
 
+                <!-- Bullet Points with Icons, Headings and Descriptions -->
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <i class="ri-rocket-2-line text-black text-3xl sm:text-4xl mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">10+ Years of Industry Experience</h3>
+                            <p class="text-sm text-gray-600">We have a decade-long track record of delivering quality
+                                services and trusted business solutions across various sectors.</p>
+                        </div>
+                    </li>
+
+                    <li class="flex items-start gap-4">
+                        <i class="ri-hand-heart-line text-black text-3xl sm:text-4xl mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Customer-Centric & Ethical Practices</h3>
+                            <p class="text-sm text-gray-600">We prioritize customer satisfaction and maintain complete
+                                transparency in our dealings to build long-term trust.</p>
+                        </div>
+                    </li>
+
+                    <li class="flex items-start gap-4">
+                        <i class="ri-global-line text-black text-3xl sm:text-4xl mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Rapid Expansion Across India</h3>
+                            <p class="text-sm text-gray-600">Our presence is rapidly growing with franchise partners in
+                                multiple cities and towns nationwide.</p>
+                        </div>
+                    </li>
+
+                    <li class="flex itemscstart gap-4">
+                        <i class="ri-team-line text-black text-3xl sm:text-4xl mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Dedicated Franchise Support Team</h3>
+                            <p class="text-sm text-gray-600">We offer full support to our franchise partners, including
+                                training, marketing assistance, and operational guidance.</p>
+                        </div>
+                    </li>
+                </ul>
+
+
+
 
                 <!-- Button -->
                 <a href="about.html"
-                    class="mt-5 inline-block items-center gap-2 bg-[#ef7714] text-white px-6 py-3 rounded-md font-medium shadow-md hover:bg-[#d26522] transition duration-300">
-                    Learn More About Us
+                    class="mt-10 inline-block items-center gap-2 bg-[#ef7714] text-white px-6 py-3 rounded-md font-medium shadow-md hover:bg-[#d26522] transition duration-300">
+                    Learn More
                 </a>
             </div>
         </div>
@@ -449,9 +544,9 @@
     <!-- About the Brand Section End-->
 
     <!-- Franchise Models We Offer Section Start -->
-    <section id="franchise-models" class="bg-[#f8f8f8] py-20 px-6 sm:px-10 md:px-16 relative">
+    <!-- <section id="franchise-models" class="bg-[#f8f8f8] py-20 px-6 sm:px-10 md:px-16 relative">
         <div class="container mx-auto">
-            <!-- Section Heading -->
+            
             <div class="text-center mb-16">
                 <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800">
                     Franchise Models We Offer
@@ -464,19 +559,19 @@
                 </p>
             </div>
 
-            <!-- Timeline with Center Line -->
+            
             <div class="relative h-[1280px] sm:h-[1050px] md:h-[1150px] lg:h-[1075px]">
-                <!-- Vertical Line in Center -->
+                
                 <div class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-[4px] bg-[#ef7714]/30 z-0">
-                    <!-- Icon -->
+                   
                     <div
                         class="absolute left-1/2 transform -translate-x-1/2 bg-white text-[#ef7714] w-16 h-16 flex items-center justify-center rounded-full shadow-md z-10 group-hover:scale-110 transition-transform duration-300">
                         <i class="ri-building-line text-3xl"></i>
                     </div>
-                    <!-- Kiosk Model (Left) -->
+                    
                     <div
                         class="mb-12 absolute top-[20px] md:right-0 right-1/2 translate-x-1/2 md:translate-x-0 w-[310px] sm:w-[500px] md:w-[360px] lg:w-[420px] xl:w-[600px]">
-                        <!-- Content -->
+                        
                         <div class="bg-white rounded-xl shadow-md px-6 py-4 mt-14 animate-fade-in-up">
                             <h3 class="text-xl font-semibold text-gray-800">Kiosk Model</h3>
                             <p class="text-gray-600 text-sm mt-1">
@@ -490,15 +585,15 @@
                         </div>
                     </div>
 
-                    <!-- Icon -->
+                    
                     <div
                         class="absolute top-[320px] sm:top-[260px] md:top-[310px] lg:top-[290px] left-1/2 transform -translate-x-1/2 bg-white text-[#ef7714] w-16 h-16 flex items-center justify-center rounded-full shadow-md z-10 group-hover:scale-110 transition-transform duration-300">
                         <i class="ri-store-line text-3xl"></i>
                     </div>
-                    <!-- Retail Outlet (Right) -->
+                    
                     <div
                         class="mb-12 absolute top-[340px] sm:top-[280px] md:top-[330px] lg:top-[310px] md:left-0 right-1/2 translate-x-1/2 md:translate-x-0 w-[310px] sm:w-[500px] md:w-[360px] lg:w-[420px] xl:w-[600px]">
-                        <!-- Content -->
+                        
                         <div class="bg-white rounded-xl shadow-md px-6 py-4 mt-14 animate-fade-in-up">
                             <h3 class="text-xl font-semibold text-gray-800">Retail Outlet</h3>
                             <p class="text-gray-600 text-sm mt-1">
@@ -514,16 +609,16 @@
                         </div>
                     </div>
 
-                    <!-- Icon -->
+                    
                     <div
                         class="absolute top-[660px] sm:top-[540px] md:top-[620px] lg:top-[580px] left-1/2 transform -translate-x-1/2 bg-white text-[#ef7714] w-16 h-16 flex items-center justify-center rounded-full shadow-md z-10 group-hover:scale-110 transition-transform duration-300">
                         <i class="ri-motorbike-line text-3xl"></i>
                     </div>
-                    <!-- Delivery Partner (Left) -->
+                    
                     <div
                         class="mb-12 absolute top-[680px] sm:top-[560px] md:top-[640px] lg:top-[600px] md:right-0 right-1/2 translate-x-1/2 md:translate-x-0 w-[310px] sm:w-[500px] md:w-[360px] lg:w-[420px] xl:w-[600px]">
 
-                        <!-- Content -->
+                        
                         <div class="bg-white rounded-xl shadow-md px-6 py-4 mt-14 animate-fade-in-up">
                             <h3 class="text-xl font-semibold text-gray-800">Delivery Partner</h3>
                             <p class="text-gray-600 text-sm mt-1">
@@ -538,16 +633,16 @@
                         </div>
                     </div>
 
-                    <!-- Icon -->
+                    
                     <div
                         class="absolute top-[1000px] sm:top-[810px] md:top-[910px] lg:top-[870px] left-1/2 transform -translate-x-1/2 bg-white text-[#ef7714] w-16 h-16 flex items-center justify-center rounded-full shadow-md z-10 group-hover:scale-110 transition-transform duration-300">
                         <i class="ri-star-line text-3xl"></i>
                     </div>
 
-                    <!-- Master Franchise (Right) -->
+                    
                     <div
                         class="mb-12 absolute top-[1020px] sm:top-[830px] md:top-[930px] lg:top-[890px] md:left-0 right-1/2 translate-x-1/2 md:translate-x-0 w-[310px] sm:w-[500px] md:w-[360px] lg:w-[420px] xl:w-[600px]">
-                        <!-- Content -->
+                        
                         <div
                             class="bg-white rounded-xl shadow-md px-6 py-4 w-full max-w-xl mt-14 sm:mr-5 animate-fade-in-up [animation-delay:.3s]">
                             <h3 class="text-xl font-semibold text-gray-800">Master Franchise</h3>
@@ -566,8 +661,109 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Franchise Models We Offer Section End -->
+
+    <!-- Franchise Models We Offer - Section Style Rich Layout -->
+    <section id="franchise-models" class="bg-white py-20 px-6 sm:px-10 md:px-20">
+        <div class="container mx-auto px-5 md:px-10 flex flex-col items-center">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">
+                    Franchise Models We Offer
+                </h2>
+                <p class="text-gray-600 text-base max-w-2xl mx-auto mt-4">
+                    Choose a model that fits your ambition. Whether you want to run a full-fledged retail store or join
+                    as a
+                    delivery partner — we have options tailored to your goals.
+                </p>
+            </div>
+
+            <!-- All Franchise Models -->
+            <div class="space-y-16 mt-20 2xl:w-[80%] w-full">
+
+                <!-- Model Block 1 -->
+                <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                    <div class="shrink-0 bg-[#de4e1f] text-white text-5xl p-6 rounded-2xl shadow-xl">
+                        <i class="ri-store-2-line"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Retail Outlet</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            The flagship model of our brand, perfect for high-footfall urban and semi-urban locations.
+                            Fully equipped with billing systems, product shelving, and inventory software. This model ensures a strong brand presence and offers the highest potential returns over
+                            time due to a comprehensive product range and customer loyalty.
+                        </p>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li><strong>Area Required:</strong> 400–800 sq.ft</li>
+                            <li><strong>Investment:</strong> ₹12–20 Lakhs</li>
+                            <li><strong>Returns:</strong> 18–24 Months</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Model Block 2 -->
+                <div class="flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8">
+                    <div class="shrink-0 bg-[#feb713] text-white text-5xl p-6 rounded-2xl shadow-xl">
+                        <i class="ri-building-line"></i>
+                    </div>
+                    <div class="flex-1 text-left">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Kiosk Model</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            Ideal for malls, railway stations, and market places — this low-investment model is easy to
+                            manage and fast to scale. A quick-setup option that still delivers strong brand recall and consistent profits with
+                            optimized inventory.
+                        </p>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li><strong>Area Required:</strong> 80–100 sq.ft</li>
+                            <li><strong>Investment:</strong> ₹5–8 Lakhs</li>
+                            <li><strong>Returns:</strong> 12–16 Months</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Model Block 3 -->
+                <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                    <div class="shrink-0 bg-[#92bf37] text-white text-5xl p-6 rounded-2xl shadow-xl">
+                        <i class="ri-motorbike-line"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Delivery Partner</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            Start your journey as a delivery logistics partner without the need for a physical store. Leverage our brand and delivery management system to grow in your local area. Best suited for college students, part-timers, or existing courier partners looking to
+                            expand into grocery delivery
+                        </p>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li><strong>Area Required:</strong> Not Required</li>
+                            <li><strong>Investment:</strong> ₹1–2 Lakhs</li>
+                            <li><strong>Returns:</strong> 6–9 Months</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Model Block 4 -->
+                <div class="flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8">
+                    <div class="shrink-0 bg-[#3e7911] text-white text-5xl p-6 rounded-2xl shadow-xl">
+                        <i class="ri-star-line"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Master Franchise</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            Take the leadership role in an entire zone or city. You’ll be responsible for setting up
+                            sub-franchises, training, and regional marketing. This model suits business veterans and investors looking to control large-scale operations
+                            with higher ROI potential and brand leverage.
+                        </p>
+                        <ul class="text-xs text-gray-700 space-y-1">
+                            <li><strong>Area Required:</strong> Based on Region</li>
+                            <li><strong>Investment:</strong> ₹25 Lakhs+</li>
+                            <li><strong>Returns:</strong> 24–30 Months</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- Why Partner With Us Section Start-->
     <!-- <section class="py-20 px-6 sm:px-10 md:px-16 bg-gradient-to-br from-[#fefcdf] via-[#f6ffe3] to-[#fff3e3]">
@@ -664,7 +860,7 @@
             <!-- Heading -->
             <div class="text-center mb-14">
                 <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800">Support & Training
-                    <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span>
+                    <!-- <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span> -->
                 </h2>
                 <p class="text-base text-gray-600 mt-3 max-w-2xl mx-auto">
                     We empower you with complete support from launch to operations. Explore how we make your journey
@@ -790,12 +986,11 @@
     <!-- Support & Training Section End -->
 
     <!-- become franchise partner section start-->
-    <section class="bg-gradient-to-br from-[#fefcdf] via-[#f6ffe3] to-[#fff3e3] py-20 px-6 sm:px-10 md:px-16"
-        id="franchise-partner">
+    <section class="bg-[#f3ffde] py-20 px-6 sm:px-10 md:px-16" id="franchise-partner">
         <div class="container mx-auto">
 
             <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 text-center">How to Become a Franchise Partner
-                <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span>
+                <!-- <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span> -->
             </h2>
             <p class="text-base text-gray-600 mt-3 max-w-2xl mx-auto text-center">
                 Follow these simple steps to start your journey as a franchise partner and build a successful business
@@ -872,7 +1067,7 @@
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-16 text-center">
             <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-2">Associated Brands
-                <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span>
+                <!-- <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span> -->
             </h2>
             <p class="text-gray-600 mb-10">Trusted by India’s leading media and business platforms</p>
 
@@ -1087,7 +1282,7 @@
         <div class="container mx-auto">
             <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 text-center">
                 What Our Franchise Partners Say
-                <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span>
+                <!-- <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span> -->
             </h2>
 
             <div class="mt-12 owl-carousel testimonial-carousel owl-theme sm:px-10">
@@ -1142,36 +1337,12 @@
     </section>
     <!-- tesimonal section end -->
 
-    <!-- Newsletter Subscription Section Start-->
-    <section class="bg-gradient-to-br from-[#fefcdf] via-[#f6ffe3] to-[#fff3e3] py-16">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">Subscribe to Get Franchise Updates
-                <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span>
-            </h2>
-            <p class="text-gray-600 mb-8">Be the first to know about new franchise models, offers, and insider
-                tips!</p>
-
-            <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <input type="email" placeholder="Enter your email"
-                    class="w-full sm:w-96 px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ef7714] transition"
-                    required />
-                <button type="submit"
-                    class="px-6 py-3 bg-[#ef7714] hover:bg-[#d26522] text-white font-semibold rounded-full transition duration-300">
-                    Subscribe
-                </button>
-            </form>
-
-            <p class="mt-4 text-sm text-gray-700">We respect your privacy. No spam ever.</p>
-        </div>
-    </section>
-    <!-- Newsletter Subscription Section End-->
-
     <!-- FAQ Section Start -->
     <section class="bg-white py-16 md:px-32">
         <div class="container mx-auto px-4">
             <h2 class="text-2xl sm:text-3xl font-semibold text-center text-gray-800 mb-4">
                 Frequently Asked Questions
-                <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span>
+                <!-- <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span> -->
             </h2>
             <p class="text-center text-gray-600 mb-10">
                 Clear your doubts before getting started with your franchise journey
@@ -1190,7 +1361,7 @@
                         </svg>
                     </button>
                     <div
-                        class="faq-content max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-2 text-gray-600">
+                        class="faq-content max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out text-gray-600">
                         Our franchise model starts from as low as ₹5 Lakhs, depending on the city and format you choose.
                     </div>
                 </div>
@@ -1207,7 +1378,7 @@
                         </svg>
                     </button>
                     <div
-                        class="faq-content max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-2 text-gray-600">
+                        class="faq-content max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out text-gray-600">
                         It typically takes 2-4 weeks to get you fully onboarded and ready for launch.
                     </div>
                 </div>
@@ -1223,7 +1394,7 @@
                         </svg>
                     </button>
                     <div
-                        class="faq-content max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-2 text-gray-600">
+                        class="faq-content max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out text-gray-600">
                         Not at all! We provide full training and guidance so even first-time business owners can
                         succeed.
                     </div>
@@ -1240,7 +1411,7 @@
                         </svg>
                     </button>
                     <div
-                        class="faq-content max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-2 text-gray-600">
+                        class="faq-content max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out text-gray-600">
                         Yes, our team assists with store layout, branding, and marketing strategies to ensure a
                         successful launch.
                     </div>
@@ -1249,6 +1420,30 @@
         </div>
     </section>
     <!-- FAQ Section End -->
+
+    <!-- Newsletter Subscription Section Start-->
+    <section class="bg-gradient-to-br from-[#fefcdf] via-[#f6ffe3] to-[#fff3e3] py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">Subscribe to Get Franchise Updates
+                <!-- <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span> -->
+            </h2>
+            <p class="text-gray-600 mb-8">Be the first to know about new franchise models, offers, and insider
+                tips!</p>
+
+            <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <input type="email" placeholder="Enter your email"
+                    class="w-full sm:w-96 px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ef7714] transition"
+                    required />
+                <button type="submit"
+                    class="px-6 py-3 bg-[#ef7714] hover:bg-[#d26522] text-white font-semibold rounded-full transition duration-300">
+                    Subscribe
+                </button>
+            </form>
+
+            <p class="mt-4 text-sm text-gray-700">We respect your privacy. No spam ever.</p>
+        </div>
+    </section>
+    <!-- Newsletter Subscription Section End-->
 
     <!-- footer section start -->
     <footer class="relative bg-[#12470b] backdrop-blur-xl text-gray-100 shadow-inner overflow-hidden">
@@ -1277,10 +1472,10 @@
                         <li><a href="about.html"
                                 class="hover:text-[#bed62e] hover:underline underline-offset-4 transition">About Us</a>
                         </li>
-                        <li><a href="#franchise-models"
+                        <li><a href="index.html#franchise-models"
                                 class="hover:text-[#bed62e] hover:underline underline-offset-4 transition">Franchise
                                 Models</a></li>
-                        <li><a href="#franchise-partner"
+                        <li><a href="index.html#franchise-partner"
                                 class="hover:text-[#bed62e] hover:underline underline-offset-4 transition">How to
                                 Apply</a>
                         </li>
@@ -1297,10 +1492,14 @@
                 <!-- Contact Info -->
                 <div class="col-span-1 md:col-span-1 lg:col-span-1">
                     <h4 class="font-semibold text-lg mb-4 text-white">Contact</h4>
-                    <ul class="text-sm text-[#bed62e] font-bold space-y-2 leading-relaxed">
-                        <li><span>Email:</span> support@megamart99.com</li>
-                        <li><span>Phone:</span> +91 75426 7XXXX</li>
-                        <li><span>Address:</span> Sector 59, Business Park, Noida</li>
+                    <ul class="text-sm text-white font-bold space-y-2 leading-relaxed">
+                        <li>Email: <span class="text-[#bed62e]"><a
+                                    href="mailto:support@megamart99.com">support@megamart99.com</a></span></li>
+                        <li>Phone: <span class="text-[#bed62e]"><a href="tel:+91754267XXXX">+91 75426 7XXXX</a></span>
+                        </li>
+                        <li>Address: <span class="text-[#bed62e]"><a
+                                    href="https://www.google.com/maps?q=Sector+59+Business+Park+Noida">Sector 59,
+                                    Business Park, Noida</a></span></li>
                     </ul>
                 </div>
 
@@ -1331,7 +1530,7 @@
 
             <!-- Bottom -->
             <div class="relative z-10 mt-12 pt-6 border-t border-[#bed62e]/30 text-center text-sm text-gray-300">
-                © 2025 <span class="text-[#bed62e]">Mega Mart 99</span>. All rights reserved.
+                © 2025 <span class="text-[#bed62e]">IT Solutions Sama Systems</span>. All rights reserved.
             </div>
         </div>
     </footer>

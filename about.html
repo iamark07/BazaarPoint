@@ -42,8 +42,46 @@
             class="w-20 sm:w-24 h-20 sm:h-24 animate-slide-logo" />
     </div>
 
+    <!-- WhatsApp popup -->
+    <div class="fixed bottom-6 right-4 sm:right-6 z-20">
+        <!-- WhatsApp Button -->
+        <button id="whatsappBtn"
+            class="bg-green-500 text-white w-10 h-10 sm:w-16 text-xl6sm: sm:h-16 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition">
+            <i class="ri-whatsapp-line text-2xl sm:text-4xl"></i>
+        </button>
+
+        <!-- WhatsApp Popup -->
+        <div id="whatsappPopup"
+            class="hidden mt-3 p-4 bg-white rounded-xl shadow-xl w-64 text-sm text-gray-800 animate-fade-in">
+            <p class="font-semibold">Chat on WhatsApp</p>
+            <p class="text-gray-500 mt-1">+91 75426 7XXXX</p>
+            <a href="https://wa.me/91754267XXXX" target="_blank"
+                class="block mt-3 text-center bg-green-500 text-white py-2 rounded hover:bg-green-600">
+                Start Chat
+            </a>
+        </div>
+    </div>
+    <!-- Call us now popup-->
+    <div class="fixed bottom-6 left-4 sm:left-6 z-20">
+        <!-- Call Us Button -->
+        <button id="callBtn"
+            class="bg-yellow-500 text-white w-10 h-10 sm:w-16 text-xl6sm: sm:h-16 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition">
+            <i class="ri-phone-line text-xl sm:text-3xl"></i>
+        </button>
+
+        <!-- Call Popup -->
+        <div id="callPopup"
+            class="hidden mt-3 p-4 bg-white rounded-xl shadow-xl w-64 text-sm text-gray-800 animate-fade-in text-center">
+            <p class="font-semibold">Call Us Now</p>
+            <p class="text-gray-500 mt-1">We're here to help</p>
+            <a href="tel:+91754267XXXX" class="block mt-3 bg-yellow-500 text-white py-2 rounded hover:bg-yellow-600">
+                Call +91 75426 7XXXX
+            </a>
+        </div>
+    </div>
+
     <!-- Topbar Start -->
-    <div class="bg-[#4a290b] hidden md:flex py-2 px-6 md:px-10">
+    <div class="bg-[#12470b] hidden md:flex py-2 px-6 md:px-10">
         <div class="container mx-auto text-gray-100 text-sm flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <span class="flex items-center gap-1">
@@ -71,12 +109,12 @@
     <!-- Header section start-->
     <header class="sticky top-0 z-50">
         <div
-            class="relative bg-gradient-to-br from-[#fffab7] via-[#ebffc3] to-[#ffecd2] backdrop-blur-xl px-6 md:px-10 transition-all duration-300 shadow-md  overflow-hidden">
+            class="relative bg-white backdrop-blur-xl px-6 md:px-10 transition-all duration-300 shadow-md overflow-hidden">
             <!-- Glow circle background -->
             <!-- <div class="absolute -top-10 -left-10 w-60 h-60 bg-[#ff9e4f]/20 rounded-full blur-3xl z-0"></div>
             <div class="absolute -bottom-10 -right-10 w-72 h-72 bg-[#ff9e4f]/10 rounded-full blur-3xl z-0"></div> -->
 
-            <div class="container mx-auto py-5 flex items-center justify-between">
+            <div class="container mx-auto py-5 md:py-7 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex items-center gap-3 z-10">
                     <a href="index.html">
@@ -89,7 +127,7 @@
                     <a href="index.html" class="hover:text-[#ef7714] flex items-center gap-1 duration-200">
                         Home
                     </a>
-                    <a href="about.html" class="text-[#ef7714] flex items-center gap-1 duration-200 font-semibold">
+                    <a href="about.html" class="text-[#ef7714] font-semibold flex items-center gap-1 duration-200">
                         About
                     </a>
                     <a href="contact.html" class="hover:text-[#ef7714] flex items-center gap-1 duration-200">
@@ -100,7 +138,7 @@
                 <div class="flex gap-2 lg:gap-10 z-10">
                     <!-- Download Brochure Button -->
                     <a href="#"
-                        class="hidden md:flex items-center text-sm gap-2 bg-[#ef7714] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-[#d26522] transition duration-300">
+                        class="hidden md:flex items-center text-sm gap-2 bg-[#3e7911] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-[#3e7911] transition duration-300">
                         <i class="ri-download-2-line"></i> Download Brochure
                     </a>
                 </div>
@@ -118,7 +156,7 @@
         <!-- Slide-in Mobile Menu -->
         <div id="mobile-menu"
             class="fixed top-0 left-[-100%] h-[100dvh] w-full z-[100] transition-all duration-200 flex">
-            <div class="w-[65%] h-full bg-[#fff5ed] shadow-xl relative">
+            <div class="w-[65%] h-full bg-white shadow-xl relative">
                 <div class="p-4 flex justify-between items-center border-b">
                     <!-- Logo -->
                     <div class="flex items-center gap-3">
@@ -130,12 +168,11 @@
                 </div>
                 <ul class="flex flex-col gap-4 p-6 text-gray-700 font-medium">
                     <li>
-                        <a href="index.html"
-                            class="flex items-center gap-2 hover:text-[#ef7714]">Home
+                        <a href="index.html" class="flex items-center gap-2 hover:text-[#ef7714]">Home
                         </a>
                     </li>
                     <li>
-                        <a href="about.html" class="text-[#ef7714] flex items-center gap-2 font-semibold">
+                        <a href="about.html" class="text-[#ef7714] font-semibold flex items-center gap-2">
                             About
                         </a>
                     </li>
@@ -148,26 +185,26 @@
 
                 <div class="px-6 mt-3">
                     <a href="#"
-                        class="w-full text-center text-xs bg-[#ef7714] text-white py-3 rounded-lg hover:bg-[#d26522] transition-all duration-200 flex justify-center items-center gap-2">
+                        class="w-full text-center text-xs bg-[#3e7911] text-white py-3 rounded-lg hover:bg-[#3e7911] transition-all duration-200 flex justify-center items-center gap-2">
                         <i class="ri-download-2-line"></i> Download Brochure
                     </a>
                 </div>
 
                 <div class="flex space-x-3 justify-center w-full absolute bottom-5">
                     <a href="https://www.linkedin.com/company/megamart99/" target="_blank"
-                        class="text-[#ef7714] text-xl w-9 h-9 hover:bg-[#ef7714] hover:text-white transition-all duration-300 rounded-full border border-[#ef7714] flex justify-center items-center">
+                        class="text-[#3e7911] text-xl w-9 h-9 hover:bg-[#3e7911] hover:text-white transition-all duration-300 rounded-full border border-[#3e7911] flex justify-center items-center">
                         <i class="ri-facebook-circle-fill"></i>
                     </a>
                     <a href="https://www.linkedin.com/company/megamart99/" target="_blank"
-                        class="text-[#ef7714] text-xl w-9 h-9 hover:bg-[#ef7714] hover:text-white transition-all duration-300 rounded-full border border-[#ef7714] flex justify-center items-center">
+                        class="text-[#3e7911] text-xl w-9 h-9 hover:bg-[#3e7911] hover:text-white transition-all duration-300 rounded-full border border-[#3e7911] flex justify-center items-center">
                         <i class="ri-instagram-fill"></i>
                     </a>
                     <a href="https://www.linkedin.com/company/megamart99/" target="_blank"
-                        class="text-[#ef7714] text-xl w-9 h-9 hover:bg-[#ef7714] hover:text-white transition-all duration-300 rounded-full border border-[#ef7714] flex justify-center items-center">
+                        class="text-[#3e7911] text-xl w-9 h-9 hover:bg-[#3e7911] hover:text-white transition-all duration-300 rounded-full border border-[#3e7911] flex justify-center items-center">
                         <i class="ri-linkedin-box-fill"></i>
                     </a>
                     <a href="https://www.linkedin.com/company/megamart99/" target="_blank"
-                        class="text-[#ef7714] text-xl w-9 h-9 hover:bg-[#ef7714] hover:text-white transition-all duration-300 rounded-full border border-[#ef7714] flex justify-center items-center">
+                        class="text-[#3e7911] text-xl w-9 h-9 hover:bg-[#3e7911] hover:text-white transition-all duration-300 rounded-full border border-[#3e7911] flex justify-center items-center">
                         <i class="ri-whatsapp-fill"></i>
                     </a>
                 </div>
@@ -223,8 +260,8 @@
                     <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="Our Brand"
                         class="rounded-xl shadow-lg w-full h-auto md:h-full object-cover" loading="lazy">
                     <div
-                        class="absolute -bottom-5 -right-5 bg-[#3e7911] text-white px-4 py-2 rounded-lg text-sm shadow-lg">
-                        Trusted by 1000+ Customers
+                        class="absolute flex flex-col items-center gap-2 -bottom-5 -right-5 bg-[#3e7911] text-white px-4 py-2 text-[10px] shadow-lg">
+                        <img src="assets/img/trusted_img.png" alt="" class="w-8"> Trusted by 100000+ Customers
                     </div>
                 </div>
 
@@ -427,8 +464,7 @@
     </div>
 
     <!-- footer section start -->
-    <footer
-        class="relative bg-gradient-to-br from-[#fffab7] via-[#ebffc3] to-[#ffddad] backdrop-blur-xl text-gray-800 shadow-inner overflow-hidden">
+    <footer class="relative bg-[#12470b] backdrop-blur-xl text-gray-100 shadow-inner overflow-hidden">
         <div class="container mx-auto py-14 px-6 md:px-16">
 
             <!-- Glow circle background -->
@@ -442,30 +478,30 @@
                     <a href="index.html">
                         <img src="assets/img/Mega-mart-99-logo.png" alt="Mega Mart 99 Logo" class="w-32 sm:w-40">
                     </a>
-                    <p class="text-sm text-gray-900 mt-3 leading-relaxed text-center md:text-start">
+                    <p class="text-sm text-gray-100 mt-3 leading-relaxed text-center md:text-start">
                         Empowering entrepreneurs across the country with a strong brand, training & support.
                     </p>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="col-span-1 md:col-span-1 lg:col-span-1">
-                    <h4 class="font-semibold text-lg mb-4 text-black">Quick Links</h4>
-                    <ul class="space-y-2 text-sm text-gray-800">
+                    <h4 class="font-semibold text-lg mb-4 text-white">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
                         <li><a href="about.html"
-                                class="hover:text-[#ef7714] hover:underline underline-offset-4 transition">About Us</a>
+                                class="hover:text-[#bed62e] hover:underline underline-offset-4 transition">About Us</a>
                         </li>
-                        <li><a href="#franchise-models"
-                                class="hover:text-[#ef7714] hover:underline underline-offset-4 transition">Franchise
+                        <li><a href="index.html#franchise-models"
+                                class="hover:text-[#bed62e] hover:underline underline-offset-4 transition">Franchise
                                 Models</a></li>
-                        <li><a href="#franchise-partner"
-                                class="hover:text-[#ef7714] hover:underline underline-offset-4 transition">How to
+                        <li><a href="index.html#franchise-partner"
+                                class="hover:text-[#bed62e] hover:underline underline-offset-4 transition">How to
                                 Apply</a>
                         </li>
-                        <li><a href="#testimonials"
-                                class="hover:text-[#ef7714] hover:underline underline-offset-4 transition">Testimonials</a>
+                        <li><a href="index.html#testimonials"
+                                class="hover:text-[#bed62e] hover:underline underline-offset-4 transition">Testimonials</a>
                         </li>
                         <li><a href="contact.html"
-                                class="hover:text-[#ef7714] hover:underline underline-offset-4 transition">Contact
+                                class="hover:text-[#bed62e] hover:underline underline-offset-4 transition">Contact
                                 Us</a>
                         </li>
                     </ul>
@@ -473,32 +509,36 @@
 
                 <!-- Contact Info -->
                 <div class="col-span-1 md:col-span-1 lg:col-span-1">
-                    <h4 class="font-semibold text-lg mb-4 text-black">Contact</h4>
-                    <ul class="text-sm text-gray-800 space-y-2 leading-relaxed">
-                        <li><span class="font-medium">Email:</span> support@megamart99.com</li>
-                        <li><span class="font-medium">Phone:</span> +91 75426 7XXXX</li>
-                        <li><span class="font-medium">Address:</span> Sector 59, Business Park, Noida</li>
+                    <h4 class="font-semibold text-lg mb-4 text-white">Contact</h4>
+                    <ul class="text-sm text-white font-bold space-y-2 leading-relaxed">
+                        <li>Email: <span class="text-[#bed62e]"><a
+                                    href="mailto:support@megamart99.com">support@megamart99.com</a></span></li>
+                        <li>Phone: <span class="text-[#bed62e]"><a href="tel:+91754267XXXX">+91 75426 7XXXX</a></span>
+                        </li>
+                        <li>Address: <span class="text-[#bed62e]"><a
+                                    href="https://www.google.com/maps?q=Sector+59+Business+Park+Noida">Sector 59,
+                                    Business Park, Noida</a></span></li>
                     </ul>
                 </div>
 
                 <!-- Social Links -->
                 <div class="col-span-1 md:col-span-1 lg:col-span-1">
-                    <h4 class="font-semibold text-lg mb-4 text-black">Follow Us</h4>
+                    <h4 class="font-semibold text-lg mb-4 text-white">Follow Us</h4>
                     <div class="flex space-x-3">
                         <a href="https://www.linkedin.com/company/megamart99/" target="_blank"
-                            class="text-[#ef7714] text-xl w-9 h-9 hover:bg-[#ef7714] hover:text-white transition-all duration-300 rounded-full border border-[#ef7714] flex justify-center items-center">
+                            class="text-[#bed62e] text-xl w-9 h-9 hover:bg-[#bed62e] hover:text-white transition-all duration-300 rounded-full border border-[#bed62e] flex justify-center items-center">
                             <i class="ri-facebook-circle-fill"></i>
                         </a>
                         <a href="https://www.linkedin.com/company/megamart99/" target="_blank"
-                            class="text-[#ef7714] text-xl w-9 h-9 hover:bg-[#ef7714] hover:text-white transition-all duration-300 rounded-full border border-[#ef7714] flex justify-center items-center">
+                            class="text-[#bed62e] text-xl w-9 h-9 hover:bg-[#bed62e] hover:text-white transition-all duration-300 rounded-full border border-[#bed62e] flex justify-center items-center">
                             <i class="ri-instagram-fill"></i>
                         </a>
                         <a href="https://www.linkedin.com/company/megamart99/" target="_blank"
-                            class="text-[#ef7714] text-xl w-9 h-9 hover:bg-[#ef7714] hover:text-white transition-all duration-300 rounded-full border border-[#ef7714] flex justify-center items-center">
+                            class="text-[#bed62e] text-xl w-9 h-9 hover:bg-[#bed62e] hover:text-white transition-all duration-300 rounded-full border border-[#bed62e] flex justify-center items-center">
                             <i class="ri-linkedin-box-fill"></i>
                         </a>
                         <a href="https://www.linkedin.com/company/megamart99/" target="_blank"
-                            class="text-[#ef7714] text-xl w-9 h-9 hover:bg-[#ef7714] hover:text-white transition-all duration-300 rounded-full border border-[#ef7714] flex justify-center items-center">
+                            class="text-[#bed62e] text-xl w-9 h-9 hover:bg-[#bed62e] hover:text-white transition-all duration-300 rounded-full border border-[#bed62e] flex justify-center items-center">
                             <i class="ri-whatsapp-fill"></i>
                         </a>
                     </div>
@@ -507,8 +547,8 @@
             </div>
 
             <!-- Bottom -->
-            <div class="relative z-10 mt-12 pt-6 border-t border-[#8ab82d]/30 text-center text-sm text-gray-700">
-                © 2025 <span class="text-[#ef7714]">Mega Mart 99</span>. All rights reserved.
+            <div class="relative z-10 mt-12 pt-6 border-t border-[#bed62e]/30 text-center text-sm text-gray-300">
+                © 2025 <span class="text-[#bed62e]">IT Solutions Sama Systems</span>. All rights reserved.
             </div>
         </div>
     </footer>
