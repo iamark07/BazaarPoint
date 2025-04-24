@@ -181,60 +181,63 @@
 
     <!-- Hero Carousel Section -->
     <section class="relative w-full overflow-hidden">
-        <!-- Carousel Wrapper -->
-        <div id="carouselSlides" class="relative">
-            <!-- Desktop Slides -->
-            <div
-                class="slide-desktop relative hidden sm:block z-10 transition-opacity duration-1000 ease-in-out opacity-100">
-                <img src="assets/img/hero-section-img/slider-1.jpg" class="w-full h-auto object-cover" />
-            </div>
-            <div
-                class="slide-desktop absolute hidden sm:block inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                <img src="assets/img/hero-section-img/slider-2.jpg" class="w-full h-auto object-cover" />
-            </div>
+        <div class="container mx-auto">
+            <!-- Carousel Wrapper -->
+            <div id="carouselSlides" class="relative">
+                <!-- Desktop Slides -->
+                <div
+                    class="slide-desktop relative hidden sm:block z-10 transition-opacity duration-1000 ease-in-out opacity-100">
+                    <img src="assets/img/hero-section-img/slider-1.jpg" class="w-full h-auto object-cover" />
+                </div>
+                <div
+                    class="slide-desktop absolute hidden sm:block inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
+                    <img src="assets/img/hero-section-img/slider-2.jpg" class="w-full h-auto object-cover" />
+                </div>
 
-            <!-- Mobile Slides -->
-            <div
-                class="slide-mobile relative block sm:hidden z-10 transition-opacity duration-1000 ease-in-out opacity-100">
-                <img src="assets/img/hero-section-img/slider-3.jpg" class="w-full h-auto object-cover" />
-            </div>
-            <div
-                class="slide-mobile absolute block sm:hidden inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                <img src="assets/img/hero-section-img/slider-4.jpg" class="w-full h-auto object-cover" />
-            </div>
+                <!-- Mobile Slides -->
+                <div
+                    class="slide-mobile relative block sm:hidden z-10 transition-opacity duration-1000 ease-in-out opacity-100">
+                    <img src="assets/img/hero-section-img/slider-3.jpg" class="w-full h-auto object-cover" />
+                </div>
+                <div
+                    class="slide-mobile absolute block sm:hidden inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
+                    <img src="assets/img/hero-section-img/slider-4.jpg" class="w-full h-auto object-cover" />
+                </div>
 
-            <!-- Overlay Content -->
-            <div
-                class="hidden absolute inset-0 bg-black/50  flex-col items-center justify-center text-center text-white px-4 sm:px-6 z-40">
-                <div id="carousel-content" class="hidden opacity-100 transition-opacity duration-700 ease-in-out">
-                    <h1 id="carousel-heading" class="text-2xl sm:text-5xl font-semibold mb-4"></h1>
-                    <p id="carousel-desc" class="text-sm sm:text-lg mb-6 text-center w-full"></p>
-                    <a id="carousel-btn-link" href="#"
-                        class="inline-flex items-center gap-2 bg-[#ef7714] hover:bg-[#d26522] text-white font-medium px-6 py-3 rounded-full shadow-lg transition duration-300 text-sm sm:text-base">
-                        <i class="ri-store-2-line text-lg"></i>
-                        <span id="carousel-btn-text"></span>
-                    </a>
+                <!-- Overlay Content -->
+                <div
+                    class="hidden absolute inset-0 bg-black/50  flex-col items-center justify-center text-center text-white px-4 sm:px-6 z-40">
+                    <div id="carousel-content" class="hidden opacity-100 transition-opacity duration-700 ease-in-out">
+                        <h1 id="carousel-heading" class="text-2xl sm:text-5xl font-semibold mb-4"></h1>
+                        <p id="carousel-desc" class="text-sm sm:text-lg mb-6 text-center w-full"></p>
+                        <a id="carousel-btn-link" href="#"
+                            class="inline-flex items-center gap-2 bg-[#ef7714] hover:bg-[#d26522] text-white font-medium px-6 py-3 rounded-full shadow-lg transition duration-300 text-sm sm:text-base">
+                            <i class="ri-store-2-line text-lg"></i>
+                            <span id="carousel-btn-text"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button id="prevBtn"
+                    class="absolute left-5 bottom-8 sm:top-1/2 -translate-y-1/2 text-black bg-white/60 hover:bg-white w-12 h-12 flex items-center justify-center rounded-full z-40">
+                    <i class="ri-arrow-left-s-line text-2xl"></i>
+                </button>
+                <button id="nextBtn"
+                    class="absolute right-5 bottom-8 sm:top-1/2 -translate-y-1/2 text-black bg-white/60 hover:bg-white w-12 h-12 flex items-center justify-center rounded-full z-40">
+                    <i class="ri-arrow-right-s-line text-2xl"></i>
+                </button>
+
+                <!-- Dots -->
+                <div class="absolute bottom-6 w-full flex justify-center space-x-3 z-40">
+                    <button
+                        class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button>
+                    <button
+                        class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button>
+                    <!-- <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button> -->
                 </div>
             </div>
-
-            <!-- Navigation Arrows -->
-            <button id="prevBtn"
-                class="absolute left-5 bottom-8 sm:top-1/2 -translate-y-1/2 text-black bg-white/60 hover:bg-white w-12 h-12 flex items-center justify-center rounded-full z-40">
-                <i class="ri-arrow-left-s-line text-2xl"></i>
-            </button>
-            <button id="nextBtn"
-                class="absolute right-5 bottom-8 sm:top-1/2 -translate-y-1/2 text-black bg-white/60 hover:bg-white w-12 h-12 flex items-center justify-center rounded-full z-40">
-                <i class="ri-arrow-right-s-line text-2xl"></i>
-            </button>
-
-            <!-- Dots -->
-            <div class="absolute bottom-6 w-full flex justify-center space-x-3 z-40">
-                <button
-                    class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button>
-                <button
-                    class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button>
-                <!-- <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button> -->
-            </div>
+        </div>
     </section>
 
     <!-- Why Choose Us Section Start-->
@@ -526,9 +529,8 @@
     </section>
     <!-- Franchise Models We Offer Section End -->
 
-
     <!-- Why Partner With Us Section Start-->
-    <section class="py-20 px-6 sm:px-10 md:px-16 bg-[#fcfcfc]">
+    <section class="py-20 px-6 sm:px-10 md:px-16 bg-gradient-to-br from-[#fefcdf] via-[#f6ffe3] to-[#fff3e3]">
         <div class="container mx-auto">
             <!-- Heading -->
             <div class="text-center mb-14">
@@ -687,7 +689,7 @@
             <div class="bg-white max-w-xl p-8 rounded-lg shadow-xl relative">
                 <button onclick="closeModal(1)"
                     class="absolute top-3 right-4 text-2xl text-gray-400 hover:text-[#ef7714]">&times;</button>
-                <h3 class="text-2xl font-bold text-[#ef7714] mb-4">Store Setup Assistance</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-[#ef7714] mb-4">Store Setup Assistance</h3>
                 <p class="text-sm text-gray-700 leading-relaxed space-y-2">
                     <strong>Our team helps you:</strong><br>
                     - Identify strategic store locations<br>
@@ -703,7 +705,7 @@
             <div class="bg-white max-w-xl p-8 rounded-lg shadow-xl relative">
                 <button onclick="closeModal(2)"
                     class="absolute top-3 right-4 text-2xl text-gray-400 hover:text-[#ef7714]">&times;</button>
-                <h3 class="text-2xl font-bold text-[#ef7714] mb-4">Marketing & Promotion</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-[#ef7714] mb-4">Marketing & Promotion</h3>
                 <p class="text-sm text-gray-700 leading-relaxed space-y-2">
                     <strong>Marketing support includes:</strong><br>
                     - Targeted digital campaigns (Facebook, Google, Instagram)<br>
@@ -718,7 +720,7 @@
             <div class="bg-white max-w-xl p-8 rounded-lg shadow-xl relative">
                 <button onclick="closeModal(3)"
                     class="absolute top-3 right-4 text-2xl text-gray-400 hover:text-[#ef7714]">&times;</button>
-                <h3 class="text-2xl font-bold text-[#ef7714] mb-4">Staff Training</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-[#ef7714] mb-4">Staff Training</h3>
                 <p class="text-sm text-gray-700 leading-relaxed space-y-2">
                     <strong>We provide:</strong><br>
                     - In-store practical training sessions<br>
@@ -733,7 +735,7 @@
             <div class="bg-white max-w-xl p-8 rounded-lg shadow-xl relative">
                 <button onclick="closeModal(4)"
                     class="absolute top-3 right-4 text-2xl text-gray-400 hover:text-[#ef7714]">&times;</button>
-                <h3 class="text-2xl font-bold text-[#ef7714] mb-4">POS & Billing Systems</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-[#ef7714] mb-4">POS & Billing Systems</h3>
                 <p class="text-sm text-gray-700 leading-relaxed space-y-2">
                     <strong>Included features:</strong><br>
                     - Easy-to-use billing interface<br>
@@ -748,7 +750,7 @@
     <!-- Support & Training Section End -->
 
     <!-- become franchise partner section start-->
-    <section class="bg-[#fcfcfc] py-20 px-6 sm:px-10 md:px-16" id="franchise-partner">
+    <section class="bg-gradient-to-br from-[#fefcdf] via-[#f6ffe3] to-[#fff3e3] py-20 px-6 sm:px-10 md:px-16" id="franchise-partner">
         <div class="container mx-auto">
 
             <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 text-center">How to Become a Franchise Partner
@@ -1099,8 +1101,8 @@
     </section>
     <!-- tesimonal section end -->
 
-    <!-- Newsletter Subscription Section -->
-    <section class="bg-gradient-to-br from-[#ebffc3] to-[#ffecdc] py-16">
+    <!-- Newsletter Subscription Section Start-->
+    <section class="bg-gradient-to-br from-[#fefcdf] via-[#f6ffe3] to-[#fff3e3] py-16">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">Subscribe to Get Franchise Updates
                 <span class="block w-20 h-[3px] bg-[#ef7714] mx-auto mt-2 rounded-full"></span>
@@ -1121,6 +1123,7 @@
             <p class="mt-4 text-sm text-gray-700">We respect your privacy. No spam ever.</p>
         </div>
     </section>
+    <!-- Newsletter Subscription Section End-->
 
     <!-- FAQ Section Start -->
     <section class="bg-white py-16 md:px-32">
@@ -1205,7 +1208,6 @@
         </div>
     </section>
     <!-- FAQ Section End -->
-
 
     <!-- footer section start -->
     <footer
