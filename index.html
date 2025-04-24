@@ -43,7 +43,7 @@
     </div>
 
     <!-- Topbar Start -->
-    <div class="bg-[#4a290b] hidden md:flex py-2 px-6 md:px-10">
+    <div class="bg-[#242911] hidden md:flex py-2 px-6 md:px-10">
         <div class="container mx-auto text-gray-100 text-sm flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <span class="flex items-center gap-1">
@@ -71,12 +71,12 @@
     <!-- Header section start-->
     <header class="sticky top-0 z-50">
         <div
-            class="relative bg-gradient-to-br from-[#fffab7] via-[#ebffc3] to-[#ffecd2] backdrop-blur-xl px-6 md:px-10 transition-all duration-300 shadow-md  overflow-hidden">
+            class="relative bg-white backdrop-blur-xl px-6 md:px-10 transition-all duration-300 shadow-md  overflow-hidden">
             <!-- Glow circle background -->
             <!-- <div class="absolute -top-10 -left-10 w-60 h-60 bg-[#ff9e4f]/20 rounded-full blur-3xl z-0"></div>
             <div class="absolute -bottom-10 -right-10 w-72 h-72 bg-[#ff9e4f]/10 rounded-full blur-3xl z-0"></div> -->
 
-            <div class="container mx-auto py-5 flex items-center justify-between">
+            <div class="container mx-auto py-7 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex items-center gap-3 z-10">
                     <a href="index.html">
@@ -100,7 +100,7 @@
                 <div class="flex gap-2 lg:gap-10 z-10">
                     <!-- Download Brochure Button -->
                     <a href="#"
-                        class="hidden md:flex items-center text-sm gap-2 bg-[#ef7714] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-[#d26522] transition duration-300">
+                        class="hidden md:flex items-center text-sm gap-2 bg-[#ef7714] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-[#ef7714] transition duration-300">
                         <i class="ri-download-2-line"></i> Download Brochure
                     </a>
                 </div>
@@ -130,8 +130,7 @@
                 </div>
                 <ul class="flex flex-col gap-4 p-6 text-gray-700 font-medium">
                     <li>
-                        <a href="index.html"
-                            class="flex items-center gap-2 text-[#ef7714] font-semibold">Home
+                        <a href="index.html" class="flex items-center gap-2 text-[#ef7714] font-semibold">Home
                         </a>
                     </li>
                     <li>
@@ -181,67 +180,65 @@
 
     <!-- Hero Carousel Section -->
     <section class="relative w-full overflow-hidden">
-        <div class="container mx-auto">
-            <!-- Carousel Wrapper -->
-            <div id="carouselSlides" class="relative">
-                <!-- Desktop Slides -->
-                <div
-                    class="slide-desktop relative hidden sm:block z-10 transition-opacity duration-1000 ease-in-out opacity-100">
-                    <img src="assets/img/hero-section-img/slider-1.jpg" class="w-full h-auto object-cover" />
-                </div>
-                <div
-                    class="slide-desktop absolute hidden sm:block inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                    <img src="assets/img/hero-section-img/slider-2.jpg" class="w-full h-auto object-cover" />
-                </div>
+        <!-- Carousel Wrapper -->
+        <div id="carouselSlides" class="relative">
+            <!-- Desktop Slides -->
+            <div
+                class="slide-desktop relative hidden sm:block z-10 transition-opacity duration-1000 ease-in-out opacity-100">
+                <img src="assets/img/hero-section-img/slider-1.jpg" class="w-full h-auto object-cover" />
+            </div>
+            <div
+                class="slide-desktop absolute hidden sm:block inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
+                <img src="assets/img/hero-section-img/slider-2.jpg" class="w-full h-auto object-cover" />
+            </div>
 
-                <!-- Mobile Slides -->
-                <div
-                    class="slide-mobile relative block sm:hidden z-10 transition-opacity duration-1000 ease-in-out opacity-100">
-                    <img src="assets/img/hero-section-img/slider-3.jpg" class="w-full h-auto object-cover" />
-                </div>
-                <div
-                    class="slide-mobile absolute block sm:hidden inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                    <img src="assets/img/hero-section-img/slider-4.jpg" class="w-full h-auto object-cover" />
-                </div>
+            <!-- Mobile Slides -->
+            <div
+                class="slide-mobile relative block sm:hidden z-10 transition-opacity duration-1000 ease-in-out opacity-100">
+                <img src="assets/img/hero-section-img/slider-3.jpg" class="w-full h-auto object-cover" />
+            </div>
+            <div
+                class="slide-mobile absolute block sm:hidden inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
+                <img src="assets/img/hero-section-img/slider-4.jpg" class="w-full h-auto object-cover" />
+            </div>
 
-                <!-- Overlay Content -->
-                <div
-                    class="hidden absolute inset-0 bg-black/50  flex-col items-center justify-center text-center text-white px-4 sm:px-6 z-40">
-                    <div id="carousel-content" class="hidden opacity-100 transition-opacity duration-700 ease-in-out">
-                        <h1 id="carousel-heading" class="text-2xl sm:text-5xl font-semibold mb-4"></h1>
-                        <p id="carousel-desc" class="text-sm sm:text-lg mb-6 text-center w-full"></p>
-                        <a id="carousel-btn-link" href="#"
-                            class="inline-flex items-center gap-2 bg-[#ef7714] hover:bg-[#d26522] text-white font-medium px-6 py-3 rounded-full shadow-lg transition duration-300 text-sm sm:text-base">
-                            <i class="ri-store-2-line text-lg"></i>
-                            <span id="carousel-btn-text"></span>
-                        </a>
-                    </div>
+            <!-- Overlay Content -->
+            <div
+                class="hidden absolute inset-0 bg-black/50  flex-col items-center justify-center text-center text-white px-4 sm:px-6 z-40">
+                <div id="carousel-content" class="hidden opacity-100 transition-opacity duration-700 ease-in-out">
+                    <h1 id="carousel-heading" class="text-2xl sm:text-5xl font-semibold mb-4"></h1>
+                    <p id="carousel-desc" class="text-sm sm:text-lg mb-6 text-center w-full"></p>
+                    <a id="carousel-btn-link" href="#"
+                        class="inline-flex items-center gap-2 bg-[#ef7714] hover:bg-[#d26522] text-white font-medium px-6 py-3 rounded-full shadow-lg transition duration-300 text-sm sm:text-base">
+                        <i class="ri-store-2-line text-lg"></i>
+                        <span id="carousel-btn-text"></span>
+                    </a>
                 </div>
+            </div>
 
-                <!-- Navigation Arrows -->
-                <button id="prevBtn"
-                    class="absolute left-5 bottom-8 sm:top-1/2 -translate-y-1/2 text-black bg-white/60 hover:bg-white w-12 h-12 flex items-center justify-center rounded-full z-40">
-                    <i class="ri-arrow-left-s-line text-2xl"></i>
-                </button>
-                <button id="nextBtn"
-                    class="absolute right-5 bottom-8 sm:top-1/2 -translate-y-1/2 text-black bg-white/60 hover:bg-white w-12 h-12 flex items-center justify-center rounded-full z-40">
-                    <i class="ri-arrow-right-s-line text-2xl"></i>
-                </button>
+            <!-- Navigation Arrows -->
+            <button id="prevBtn"
+                class="absolute left-5 bottom-8 sm:top-1/2 -translate-y-1/2 text-black bg-white/60 hover:bg-white w-12 h-12 flex items-center justify-center rounded-full z-40">
+                <i class="ri-arrow-left-s-line text-2xl"></i>
+            </button>
+            <button id="nextBtn"
+                class="absolute right-5 bottom-8 sm:top-1/2 -translate-y-1/2 text-black bg-white/60 hover:bg-white w-12 h-12 flex items-center justify-center rounded-full z-40">
+                <i class="ri-arrow-right-s-line text-2xl"></i>
+            </button>
 
-                <!-- Dots -->
-                <div class="absolute bottom-6 w-full flex justify-center space-x-3 z-40">
-                    <button
-                        class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button>
-                    <button
-                        class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button>
-                    <!-- <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button> -->
-                </div>
+            <!-- Dots -->
+            <div class="absolute bottom-6 w-full flex justify-center space-x-3 z-40">
+                <button
+                    class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button>
+                <button
+                    class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button>
+                <!-- <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all duration-300"></button> -->
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us Section Start-->
-    <section class="bg-gradient-to-br from-[#fffab7] via-[#ebffc3] to-[#ffddad] py-20 px-6 sm:px-10 md:px-16">
+    <section class="bg-white py-20 px-6 sm:px-10 md:px-16">
         <div class="container mx-auto text-center space-y-16">
             <!-- Heading -->
             <div class="space-y-4 pb-6">
@@ -256,10 +253,10 @@
             </div>
 
             <!-- Features Grid (with cards) -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-14">
                 <!-- Card -->
                 <div
-                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#ef7714]">
+                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-b-4 border-[#ef7714]">
                     <div class="flex justify-center mb-4">
                         <div
                             class="bg-[#fff1e6] w-16 h-16 flex items-center justify-center rounded-full shadow-lg group-hover:bg-[#ef7714]/10 transition">
@@ -272,7 +269,7 @@
                 </div>
 
                 <div
-                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#ef7714]">
+                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-b-4 border-[#ef7714]">
                     <div class="flex justify-center mb-4">
                         <div
                             class="bg-[#fff1e6] w-16 h-16 flex items-center justify-center rounded-full shadow-lg group-hover:bg-[#ef7714]/10 transition">
@@ -285,7 +282,7 @@
                 </div>
 
                 <div
-                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#ef7714]">
+                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-b-4 border-[#ef7714]">
                     <div class="flex justify-center mb-4">
                         <div
                             class="bg-[#fff1e6] w-16 h-16 flex items-center justify-center rounded-full shadow-lg group-hover:bg-[#ef7714]/10 transition">
@@ -298,7 +295,7 @@
                 </div>
 
                 <div
-                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#ef7714]">
+                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-b-4 border-[#ef7714]">
                     <div class="flex justify-center mb-4">
                         <div
                             class="bg-[#fff1e6] w-16 h-16 flex items-center justify-center rounded-full shadow-lg group-hover:bg-[#ef7714]/10 transition">
@@ -311,7 +308,7 @@
                 </div>
 
                 <div
-                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#ef7714]">
+                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-b-4 border-[#ef7714]">
                     <div class="flex justify-center mb-4">
                         <div
                             class="bg-[#fff1e6] w-16 h-16 flex items-center justify-center rounded-full shadow-lg group-hover:bg-[#ef7714]/10 transition">
@@ -324,7 +321,7 @@
                 </div>
 
                 <div
-                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-t-4 border-[#ef7714]">
+                    class="group bg-[#fffdfc] rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 border-b-4 border-[#ef7714]">
                     <div class="flex justify-center mb-4">
                         <div
                             class="bg-[#fff1e6] w-16 h-16 flex items-center justify-center rounded-full shadow-lg group-hover:bg-[#ef7714]/10 transition">
@@ -750,7 +747,8 @@
     <!-- Support & Training Section End -->
 
     <!-- become franchise partner section start-->
-    <section class="bg-gradient-to-br from-[#fefcdf] via-[#f6ffe3] to-[#fff3e3] py-20 px-6 sm:px-10 md:px-16" id="franchise-partner">
+    <section class="bg-gradient-to-br from-[#fefcdf] via-[#f6ffe3] to-[#fff3e3] py-20 px-6 sm:px-10 md:px-16"
+        id="franchise-partner">
         <div class="container mx-auto">
 
             <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 text-center">How to Become a Franchise Partner
