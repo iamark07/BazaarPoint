@@ -13,27 +13,27 @@ window.addEventListener("load", function () {
 
 const whatsappBtn = document.getElementById("whatsappBtn");
 const whatsappPopup = document.getElementById("whatsappPopup");
-const callBtn = document.getElementById("callBtn");
-const callPopup = document.getElementById("callPopup");
+// const callBtn = document.getElementById("callBtn");
+// const callPopup = document.getElementById("callPopup");
 
 whatsappBtn.addEventListener("click", () => {
   whatsappPopup.classList.toggle("hidden");
   callPopup.classList.add("hidden");
 });
 
-callBtn.addEventListener("click", () => {
-  callPopup.classList.toggle("hidden");
-  whatsappPopup.classList.add("hidden");
-});
+// callBtn.addEventListener("click", () => {
+//   callPopup.classList.toggle("hidden");
+//   whatsappPopup.classList.add("hidden");
+// });
 
 // Close popups on outside click
 document.addEventListener("click", function (e) {
   if (!whatsappBtn.contains(e.target) && !whatsappPopup.contains(e.target)) {
     whatsappPopup.classList.add("hidden");
   }
-  if (!callBtn.contains(e.target) && !callPopup.contains(e.target)) {
-    callPopup.classList.add("hidden");
-  }
+  // if (!callBtn.contains(e.target) && !callPopup.contains(e.target)) {
+  //   callPopup.classList.add("hidden");
+  // }
 });
 
 // menu slider functionality
