@@ -32,44 +32,70 @@
 /* call and whatsapp popup */
 
 @keyframes fade-in {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .animate-fade-in {
   animation: fade-in 0.3s ease-in-out forwards;
 }
 
+@keyframes backgroundScroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 50px 50px;
+  }
+}
 
-@media screen and (min-width:340px) and (max-width:420px){
+.animate-backgroundScroll {
+  animation: backgroundScroll 20s linear infinite;
+}
+
+.glass-card {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card:hover {
+  box-shadow: 0 8px 32px rgba(239, 119, 20, 0.1);
+}
+
+@media screen and (min-width: 340px) and (max-width: 420px) {
   .slide-mobile img {
     object-position: -425px 0px;
   }
 }
 
-@media screen and (min-width:421px) and (max-width:479px){
+@media screen and (min-width: 421px) and (max-width: 479px) {
   .slide-mobile img {
     object-position: -380px 0px;
   }
 }
 
-@media screen and (min-width:480px) and (max-width:540px){
+@media screen and (min-width: 480px) and (max-width: 540px) {
   .slide-mobile img {
     object-position: -300px 0px;
   }
 }
 
-@media screen and (min-width:541px) and (max-width:590px){
+@media screen and (min-width: 541px) and (max-width: 590px) {
   .slide-mobile img {
     object-position: -230px 0px;
   }
 }
 
-@media screen and (min-width:591px) and (max-width:640px){
+@media screen and (min-width: 591px) and (max-width: 640px) {
   .slide-mobile img {
     object-position: -200px 0px;
   }
 }
-
 
 /* testimonal section */
 
@@ -99,13 +125,10 @@
   display: none !important;
 }
 
-.franchise-logos .owl-nav button.owl-prev{
+.franchise-logos .owl-nav button.owl-prev {
   background: none !important;
 }
 
-.franchise-logos .owl-nav button.owl-next{
+.franchise-logos .owl-nav button.owl-next {
   background: none !important;
 }
-
-
-
