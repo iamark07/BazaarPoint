@@ -97,6 +97,14 @@
   }
 }
 
+#category-carousel .owl-stage-outer {
+  padding: 10px 0px;
+}
+
+#category-carousel .owl-nav button:hover{
+  background: none;
+}
+
 /* testimonal section */
 
 .franchise_partner_testimonal .owl-carousel .owl-stage-outer .owl-stage {
