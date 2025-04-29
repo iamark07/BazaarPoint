@@ -97,12 +97,16 @@
   }
 }
 
-/* @keyframes spin-slow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+/* #category-carousel .owl-stage-outer{
+  height: 100% !important;
 }
-.animate-spin-slow {
-  animation: spin-slow 6s linear infinite;
+
+#category-carousel .owl-stage-outer .owl-stage{
+  height: 100% !important;
+}
+
+#category-carousel .owl-stage-outer .owl-stage .owl-item{
+  height: 100% !important;
 } */
 
 #category-carousel .owl-stage-outer {
