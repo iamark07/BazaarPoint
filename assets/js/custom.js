@@ -2,83 +2,84 @@ window.addEventListener("load", function () {
   const loader = document.getElementById("loader");
   if (loader) {
     loader.classList.add("opacity-0", "pointer-events-none");
-    setTimeout(() => loader.remove(), 600);
-  }
-});
 
-let popup = document.getElementById("popup");
-let popup_overlay = document.getElementById("popup-overlay");
-let pop_form = document.getElementById("popupForm");
-let successMessage = document.getElementById("success-message");
-let formSubmitted = false;
+    // popup inquiry form
+    let popup = document.getElementById("popup");
+    let popup_overlay = document.getElementById("popup-overlay");
+    let pop_form = document.getElementById("popupForm");
+    let successMessage = document.getElementById("success-message");
+    let formSubmitted = false;
 
-let otpSent = false;
-let otpField = document.getElementById("otp-field");
-let otpButton = document.getElementById("otp-button");
-let formFields = document.querySelectorAll(
-  "#form-fields input, #form-fields select, #popupForm input[type='checkbox']"
-);
+    let otpSent = false;
+    let otpField = document.getElementById("otp-field");
+    let otpButton = document.getElementById("otp-button");
+    let formFields = document.querySelectorAll(
+      "#form-fields input, #form-fields select, #popupForm input[type='checkbox']"
+    );
 
-function showPopup() {
-  if (!formSubmitted) {
-    popup.classList.remove("opacity-0", "pointer-events-none", "-mt-40");
-    popup_overlay.classList.remove("opacity-0", "pointer-events-none");
-  }
-}
-
-function hidePopup() {
-  popup.classList.add("opacity-0", "pointer-events-none", "-mt-40");
-  popup_overlay.classList.add("opacity-0", "pointer-events-none");
-
-  if (!formSubmitted) {
-    setTimeout(showPopup, 5000); // 5 sec delay for reshow
-  }
-}
-
-setTimeout(showPopup, 5000);
-popup_overlay.addEventListener("click", hidePopup);
-
-pop_form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  if (!otpSent) {
-    // OTP Step: Show OTP field and disable rest of form
-    otpSent = true;
-    otpField.classList.remove("hidden");
-    otpField.setAttribute("required", "true");
-    otpButton.textContent = "Confirm OTP";
-
-    formFields.forEach((field) => {
-      if (field !== otpField) {
-        field.disabled = true;
+    function showPopup() {
+      if (!formSubmitted) {
+        popup.classList.remove("opacity-0", "pointer-events-none", "-mt-40");
+        popup_overlay.classList.remove("opacity-0", "pointer-events-none");
       }
-    });
-  } else {
-    // OTP Confirmed: Show success message
-    formSubmitted = true;
-    popup.classList.add("opacity-0", "pointer-events-none");
-    popup_overlay.classList.add("opacity-0", "pointer-events-none");
-    successMessage.classList.remove("hidden");
-    otpField.removeAttribute("required");
+    }
 
-    setTimeout(() => {
-      hidePopup();
-      setTimeout(() => {
-        formSubmitted = false;
-        otpSent = false;
-        pop_form.reset();
-        otpField.classList.add("hidden");
-        otpButton.textContent = "Send OTP";
+    function hidePopup() {
+      popup.classList.add("opacity-0", "pointer-events-none", "-mt-40");
+      popup_overlay.classList.add("opacity-0", "pointer-events-none");
+
+      if (!formSubmitted) {
+        setTimeout(showPopup, 5000); // 5 sec delay for reshow
+      }
+    }
+
+    setTimeout(showPopup, 3000);
+    popup_overlay.addEventListener("click", hidePopup);
+
+    pop_form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (!otpSent) {
+        // OTP Step: Show OTP field and disable rest of form
+        otpSent = true;
+        otpField.classList.remove("hidden");
+        otpField.setAttribute("required", "true");
+        otpButton.textContent = "Confirm OTP";
 
         formFields.forEach((field) => {
-          field.disabled = false;
+          if (field !== otpField) {
+            field.disabled = true;
+          }
         });
-
-        popup.classList.add("opacity-0", "pointer-events-none", "-mt-40");
+      } else {
+        // OTP Confirmed: Show success message
+        formSubmitted = true;
+        popup.classList.add("opacity-0", "pointer-events-none");
         popup_overlay.classList.add("opacity-0", "pointer-events-none");
-        successMessage.classList.add("hidden");
-      }, 1000);
-    }, 5000);
+        successMessage.classList.remove("hidden");
+        otpField.removeAttribute("required");
+
+        setTimeout(() => {
+          hidePopup();
+          setTimeout(() => {
+            formSubmitted = false;
+            otpSent = false;
+            pop_form.reset();
+            otpField.classList.add("hidden");
+            otpButton.textContent = "Send OTP";
+
+            formFields.forEach((field) => {
+              field.disabled = false;
+            });
+
+            popup.classList.add("opacity-0", "pointer-events-none", "-mt-40");
+            popup_overlay.classList.add("opacity-0", "pointer-events-none");
+            successMessage.classList.add("hidden");
+          }, 1000);
+        }, 5000);
+      }
+    });
+    setTimeout(() => loader.remove(), 600);
   }
 });
 
