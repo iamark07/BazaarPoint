@@ -37,7 +37,7 @@ window.addEventListener("load", function () {
   popup_overlay.addEventListener("click", hidePopup);
   setTimeout(showPopup, 3000);
 
-  // Utility: Show error
+  // where show Show error
   function showError(input, message = "") {
     let errorEl = input.parentElement.querySelector(".error-message");
     if (!errorEl) {
@@ -57,7 +57,7 @@ window.addEventListener("load", function () {
     input.classList.add("border-red-500", "ring-2", "ring-red-300");
   }
 
-  // Utility: Clear error
+  // hide Clear error
   function clearError(input) {
     let errorEl = input.parentElement.querySelector(".error-message");
     if (errorEl) {
@@ -75,12 +75,12 @@ window.addEventListener("load", function () {
       clearError(field);
       const value = field.value.trim();
 
-      //   console.log("Field:", field.name || field.id, "| Value:", value);
+      
 
       if (value === "") {
         showError(field, "This field is required");
         isValid = false;
-        // console.log("⚠️ Empty field:", field.name || field.id);
+        
         return;
       }
 
