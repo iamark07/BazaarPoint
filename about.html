@@ -37,87 +37,130 @@
 
     <!-- Overlay -->
     <div id="popup-overlay"
-        class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-[998] opacity-0 pointer-events-none transition-all duration-200">
+        class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-[3px] z-[998] opacity-0 pointer-events-none transition-all duration-300">
     </div>
 
+
     <!-- Popup -->
-    <div id="popup"
-        class="fixed z-[999] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-[90%] max-w-3xl p-6 rounded-xl shadow-xl opacity-0 pointer-events-none -mt-40 transition-all duration-300">
-        <h2 class="text-2xl md:text-4xl font-[600] mb-2">Register now</h2>
-        <p class="mb-4 text-gray-500 md:text-lg">Process with your MegaMart99 Franchise Today!</p>
+    <div id="popup" class="fixed z-[999] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+    w-[90%] max-w-3xl p-6 md:p-10 bg-white/80 backdrop-blur-xl 
+    rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white border-opacity-30 
+    opacity-0 pointer-events-none -mt-40 transition-all duration-300">
+        <h3 class="text-lg md:text-3xl font-[600] mb-2">Become a Verified Franchise Partner</h3>
+        <p class="mb-4 text-gray-800 text-sm md:text-base">Join the fastest growing retail network with MegaMart99.</p>
 
         <form id="popupForm" class="space-y-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="form-fields">
-                <input type="text" placeholder="Full Name" class="border p-2 md:p-3 rounded w-full" required />
-                <input type="text" placeholder="WhatsApp Number" class="border p-2 md:p-3 rounded w-full" required />
-                <input type="email" placeholder="Email" class="border p-2 md:p-3 rounded w-full" required />
-                <select class="border p-2 md:p-3 rounded w-full" required>
-                    <option>Select State for Franchise</option>
-                    <option>Andhra Pradesh</option>
-                    <option>Arunachal Pradesh</option>
-                    <option>Assam</option>
-                    <option>Bihar</option>
-                    <option>Chhattisgarh</option>
-                    <option>Delhi</option>
-                    <option>Goa</option>
-                    <option>Gujarat</option>
-                    <option>Haryana</option>
-                    <option>Himachal Pradesh</option>
-                    <option>Jharkhand</option>
-                    <option>Karnataka</option>
-                    <option>Kerala</option>
-                    <option>Madhya Pradesh</option>
-                    <option>Maharashtra</option>
-                    <option>Manipur</option>
-                    <option>Meghalaya</option>
-                    <option>Mizoram</option>
-                    <option>Nagaland</option>
-                    <option>Odisha</option>
-                    <option>Punjab</option>
-                    <option>Rajasthan</option>
-                    <option>Sikkim</option>
-                    <option>Tamil Nadu</option>
-                    <option>Telangana</option>
-                    <option>Tripura</option>
-                    <option>Uttar Pradesh</option>
-                    <option>Uttarakhand</option>
-                    <option>West Bengal</option>
-                </select>
-                <select class="border p-2 md:p-3 rounded w-full" required>
-                    <option>Select Investment Range</option>
-                    <option>Rs. 5 Lakh - 10 Lakh</option>
-                    <option>Rs. 10 Lakh - 20 Lakh</option>
-                    <option>Rs. 20 Lakh - 30 Lakh</option>
-                    <option>Rs. 30 Lakh - 50 Lakh</option>
-                    <option>Rs. 50 Lakh - 1 Crore</option>
-                    <option>Rs. 1 Crore - 2 Crore</option>
-                    <option>Rs. 2 Crore - 5 Crore</option>
-                    <option>Rs. 5 Crore & Above</option>
-                </select>
-                <input type="text" id="otp-field" placeholder="Enter OTP"
-                    class="border p-2 md:p-3 rounded w-full hidden" />
+
+                <!-- Full Name -->
+                <div class="md:col-span-1">
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name"
+                        class="input-field md:col-span-1 bg-white/60 backdrop-blur-sm outline-none focus:border-[#3e7911] focus:ring-2 focus:ring-[#3e7911] text-xs md:text-base px-3 py-2 md:p-3 rounded-xl w-full placeholder-gray-500 transition duration-200" />
+                    <p class="error-message text-red-600 text-xs md:text-sm mt-1 hidden"></p>
+                </div>
+
+                <!-- WhatsApp Number -->
+                <div class="md:col-span-1">
+                    <input type="text" name="phone" id="phone" placeholder="WhatsApp Number"
+                        class="input-field md:col-span-1 bg-white/60 backdrop-blur-sm outline-none focus:border-[#3e7911] focus:ring-2 focus:ring-[#3e7911] text-xs md:text-base px-3 py-2 md:p-3 rounded-xl w-full placeholder-gray-500 transition duration-200" />
+                    <p class="error-message text-red-600 text-xs md:text-sm mt-1 hidden"></p>
+                </div>
+
+                <!-- Email -->
+                <div class="md:col-span-1">
+                    <input type="email" name="email" id="email" placeholder="Email"
+                        class="input-field md:col-span-1 bg-white/60 backdrop-blur-sm outline-none focus:border-[#3e7911] focus:ring-2 focus:ring-[#3e7911] text-xs md:text-base px-3 py-2 md:p-3 rounded-xl w-full placeholder-gray-500 transition duration-200" />
+                    <p class="error-message text-red-600 text-xs md:text-sm mt-1 hidden"></p>
+                </div>
+
+                <!-- Investment Budget -->
+                <div class="md:col-span-1">
+                    <select name="budget" id="budget"
+                        class="input-field md:col-span-1 bg-white/60 backdrop-blur-sm outline-none focus:border-[#3e7911] focus:ring-2 focus:ring-[#3e7911] text-xs md:text-base px-3 py-2 md:p-3 rounded-xl w-full placeholder-gray-500 transition duration-200">
+                        <option value="">Your Investment Budget</option>
+                        <option>Rs. 5 Lakh - 10 Lakh</option>
+                        <option>Rs. 10 Lakh - 20 Lakh</option>
+                        <option>Rs. 20 Lakh - 30 Lakh</option>
+                        <option>Rs. 30 Lakh - 50 Lakh</option>
+                        <option>Rs. 50 Lakh - 1 Crore</option>
+                        <option>Rs. 1 Crore - 2 Crore</option>
+                        <option>Rs. 2 Crore - 5 Crore</option>
+                        <option>Rs. 5 Crore & Above</option>
+                    </select>
+                    <p class="error-message text-red-600 text-xs md:text-sm mt-1 hidden"></p>
+                </div>
+
+                <!-- State -->
+                <div class="md:col-span-1">
+                    <select name="state" id="state"
+                        class="input-field md:col-span-1 bg-white/60 backdrop-blur-sm outline-none focus:border-[#3e7911] focus:ring-2 focus:ring-[#3e7911] text-xs md:text-base px-3 py-2 md:p-3 rounded-xl w-full placeholder-gray-500 transition duration-200">
+                        <option value="">Your Preferred State</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Arunachal Pradesh</option>
+                        <option>Assam</option>
+                        <option>Bihar</option>
+                        <option>Chhattisgarh</option>
+                        <option>Delhi</option>
+                        <option>Goa</option>
+                        <option>Gujarat</option>
+                        <option>Haryana</option>
+                        <option>Himachal Pradesh</option>
+                        <option>Jharkhand</option>
+                        <option>Karnataka</option>
+                        <option>Kerala</option>
+                        <option>Madhya Pradesh</option>
+                        <option>Maharashtra</option>
+                        <option>Manipur</option>
+                        <option>Meghalaya</option>
+                        <option>Mizoram</option>
+                        <option>Nagaland</option>
+                        <option>Odisha</option>
+                        <option>Punjab</option>
+                        <option>Rajasthan</option>
+                        <option>Sikkim</option>
+                        <option>Tamil Nadu</option>
+                        <option>Telangana</option>
+                        <option>Tripura</option>
+                        <option>Uttar Pradesh</option>
+                        <option>Uttarakhand</option>
+                        <option>West Bengal</option>
+                    </select>
+                    <p class="error-message text-red-600 text-xs md:text-sm mt-1 hidden"></p>
+                </div>
+
+                <!-- OTP Field -->
+                <div class="md:col-span-1 hidden" id="otp-container">
+                    <input type="text" name="otp" id="otp-field" placeholder="Enter OTP"
+                        class="input-field md:col-span-1 bg-white/60 backdrop-blur-sm outline-none focus:border-[#3e7911] focus:ring-2 focus:ring-[#3e7911] text-xs md:text-base px-3 py-2 md:p-3 rounded-xl w-full placeholder-gray-500 transition duration-200" />
+                    <p class="error-message text-red-600 text-xs md:text-sm mt-1 hidden" id="otp-error"></p>
+                </div>
             </div>
 
-            <div class="flex items-center mt-2">
-                <input type="checkbox" id="terms" class="mr-2" required />
-                <label for="terms" class="text-xs md:text-base">I Agree with the Terms & Conditions</label>
-            </div>
-
-            <div class="flex items-center">
-                <input type="checkbox" id="newsletter" class="mr-2" />
-                <label for="newsletter" class="text-xs md:text-base">Subscribe to newsletter</label>
+            <!-- Terms & Newsletter -->
+            <div class="flex flex-col md:flex-row gap-3 md:gap-10 mt-2">
+                <div class="flex items-center form-group">
+                    <input type="checkbox" id="terms" />
+                    <label for="terms" class="text-xs md:text-base ml-2">I agree to the <a href=""
+                            class="text-blue-500 underline">Terms & Conditions</a></label>
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" id="newsletter" />
+                    <label for="newsletter" class="text-xs md:text-base ml-2">Subscribe to newsletter</label>
+                </div>
             </div>
 
             <!-- Button -->
-            <button type="submit" id="otp-button" class="mt-4 bg-orange-500 text-white px-6 py-2 rounded w-full">
+            <button type="submit" id="otp-button"
+                class="mt-4 bg-[#3e7911] text-white px-6 py-2 rounded-lg shadow-md transition-all duration-300 font-semibold text-lg w-full">
                 Send OTP
             </button>
         </form>
+
     </div>
 
     <!-- Popup Inquiry Form Success Message -->
     <div id="success-message"
-        class="absolute z-[999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden w-[90%] sm:w-[400px] md:w-[600px] md:h-[300px] flex flex-col items-center justify-center text-center py-10 bg-white p-8 rounded-xl shadow-xl">
+        class="absolute z-[999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden w-[90%] sm:w-[400px] md:w-[600px] md:h-[300px] flex flex-col items-center justify-center text-center py-10 bg-white/90 backdrop-blur-xl border border-white border-opacity-30 p-8 rounded-2xl shadow-2xl transition-all duration-300">
 
         <!-- Animated Checkmark SVG -->
         <svg class="mx-auto w-20 h-20 text-green-500" viewBox="0 0 52 52">
@@ -127,7 +170,8 @@
         </svg>
 
         <h3 class="text-2xl font-semibold mt-4">Thank you!</h3>
-        <p class="text-gray-600 mt-2">Your form has been submitted successfully.</p>
+        <p class="text-gray-700 mt-2 md:text-lg">We’ve received your request. Our team will reach out to you shortly.
+        </p>
     </div>
 
     <!-- Page Loader -->
@@ -138,7 +182,7 @@
     </div>
 
     <!-- WhatsApp popup -->
-    <div class="fixed bottom-6 right-6 md:right-10 z-40">
+    <div class="fixed bottom-6 right-6 md:right-10 z-40 flex flex-col items-end">
         <!-- WhatsApp Button -->
         <img src="assets/img/WhatsApp_icon.png" id="whatsappBtn" alt="" class=" w-12 md:w-16 cursor-pointer">
 
@@ -240,10 +284,9 @@
 
                 <div class="flex gap-2 lg:gap-10 z-10">
                     <!-- Download Brochure Button -->
-                    <a href="assets/document-pdf/sastakirana.pdf" download
-                        class="hidden md:flex items-center text-sm gap-2 bg-[#3e7911] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-[#3e7911] transition duration-300">
+                    <button class="open-popup-btn hidden md:flex items-center text-sm gap-2 bg-[#3e7911] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-[#3e7911] transition duration-300">
                         <i class="ri-download-2-line"></i> Download Brochure
-                    </a>
+                    </button>
                 </div>
 
                 <!-- Mobile Hamburger Icon -->
@@ -287,9 +330,9 @@
                 </ul>
 
                 <div class="px-6 mt-3">
-                    <a href="assets/document-pdf/sastakirana.pdf" download class="w-full text-center text-xs bg-[#3e7911] text-white py-3 rounded-lg hover:bg-[#3e7911] transition-all duration-200 flex justify-center items-center gap-2">
+                    <button class="open-popup-btn w-full text-center text-xs bg-[#3e7911] text-white py-3 rounded-lg hover:bg-[#3e7911] transition-all duration-200 flex justify-center items-center gap-2">
                         <i class="ri-download-2-line"></i> Download Brochure
-                    </a>
+                    </button>
                 </div>
 
                 <div class="flex space-x-3 justify-center w-full absolute bottom-5">
@@ -710,6 +753,7 @@
     <!-- footer section end -->
 
     <!-- custom js -->
+    <script src="assets/js/query-form.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 

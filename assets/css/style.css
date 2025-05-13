@@ -9,6 +9,19 @@
   scroll-behavior: smooth;
 }
 
+.input-error {
+  border-color: #f87171 !important; /* red-400 */
+  box-shadow: 0 0 0 2px rgba(248, 113, 113, 0.4); /* ring-red-300 */
+}
+
+.error-message {
+  color: #ef4444; /* red-500 */
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+
+
 .success-circle {
   stroke-dasharray: 157;
   stroke-dashoffset: 157;
