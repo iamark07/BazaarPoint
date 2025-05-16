@@ -37,15 +37,14 @@
 
     <!-- Overlay -->
     <div id="popup-overlay"
-        class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-[3px] z-[998] opacity-0 pointer-events-none transition-all duration-300">
+        class="hidden fixed inset-0 bg-black bg-opacity-50 backdrop-blur-[3px] z-[998]">
     </div>
-
-
+    
     <!-- Popup -->
-    <div id="popup" class="fixed z-[999] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+    <div id="popup" class="hidden fixed z-[999] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
     w-[90%] max-w-3xl p-6 md:p-10 bg-white/80 backdrop-blur-xl 
     rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white border-opacity-30 
-    opacity-0 pointer-events-none -mt-40 transition-all duration-300">
+    ">
         <h3 class="text-lg md:text-3xl font-[600] mb-2">Become a Verified Franchise Partner</h3>
         <p class="mb-4 text-gray-800 text-sm md:text-base">Join the fastest growing retail network with MegaMart99.</p>
 
@@ -136,16 +135,27 @@
                 </div>
             </div>
 
+            <p id="otp-not-send-error" class="text-red-500 text-sm my-2 hidden text-center"></p>
+            <p id="otp_succsess_massage" class="text-[#3e7911] text-sm my-2 hidden text-center"></p>
+
+
             <!-- Terms & Newsletter -->
             <div class="flex flex-col md:flex-row gap-3 md:gap-10 mt-2">
-                <div class="flex items-center form-group">
-                    <input type="checkbox" id="terms" />
-                    <label for="terms" class="text-xs md:text-base ml-2">I agree to the <a href=""
-                            class="text-blue-500 underline">Terms & Conditions</a></label>
+                <div class="flex flex-col items-start form-group">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="terms" />
+                        <label for="terms" class="text-xs md:text-base ml-2">
+                            I agree to the <a href="#" class="text-blue-500 underline">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <p class="error-message text-red-500 text-sm my-2 hidden"></p>
                 </div>
-                <div class="flex items-center">
-                    <input type="checkbox" id="newsletter" />
-                    <label for="newsletter" class="text-xs md:text-base ml-2">Subscribe to newsletter</label>
+
+                <div class="flex items-start">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="newsletter" />
+                        <label for="newsletter" class="text-xs md:text-base ml-2">Subscribe to newsletter</label>
+                    </div>
                 </div>
             </div>
 
@@ -160,7 +170,7 @@
 
     <!-- Popup Inquiry Form Success Message -->
     <div id="success-message"
-        class="absolute z-[999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden w-[90%] sm:w-[400px] md:w-[600px] md:h-[300px] flex flex-col items-center justify-center text-center py-10 bg-white/90 backdrop-blur-xl border border-white border-opacity-30 p-8 rounded-2xl shadow-2xl transition-all duration-300">
+        class="fixed z-[999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden w-[90%] sm:w-[400px] md:w-[600px] md:h-[300px] flex flex-col items-center justify-center text-center py-10 bg-white/90 backdrop-blur-xl border border-white border-opacity-30 p-8 rounded-2xl shadow-2xl transition-all duration-300">
 
         <!-- Animated Checkmark SVG -->
         <svg class="mx-auto w-20 h-20 text-green-500" viewBox="0 0 52 52">
@@ -172,11 +182,6 @@
         <h3 class="text-2xl font-semibold mt-4">Thank you!</h3>
         <p class="text-gray-700 mt-2 md:text-lg">We’ve received your request. Our team will reach out to you shortly.
         </p>
-    </div>
-
-    <!-- Page Loader -->
-    <div id="loader" class="fixed inset-0 z-[999] flex items-center justify-center bg-gradient-to-br from-[#e8ffbb] to-white/70 backdrop-blur-xl">
-        <img src="assets/img/Mega-mart-99-logo-2.png" alt="Loading..." class="w-20 sm:w-24 h-20 sm:h-24 animate-slide-logo" />
     </div>
 
     <!-- WhatsApp popup -->
@@ -238,14 +243,15 @@
             </div>
 
             <div class="hidden sm:flex items-center gap-3">
-                <a href="https://www.facebook.com/profile.php?id=61573970061177&rdid=2VkEqQnvfYPVIjev&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AMsLAo9vf%2F#" target="_blank"
-                    class="hover:text-gray-200 transition"><i class="ri-facebook-circle-fill text-lg"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61573970061177&rdid=2VkEqQnvfYPVIjev&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AMsLAo9vf%2F#"
+                    target="_blank" class="hover:text-gray-200 transition"><i
+                        class="ri-facebook-circle-fill text-lg"></i></a>
                 <a href="https://www.instagram.com/sastakirana.com_/" target="_blank"
                     class="hover:text-gray-200 transition"><i class="ri-instagram-fill text-lg"></i></a>
                 <a href="https://www.linkedin.com/company/megamart99/" target="_blank"
                     class="hover:text-gray-200 transition"><i class="ri-linkedin-box-fill text-lg"></i></a>
-                <a href="https://wa.me/917428752999" target="_blank"
-                    class="hover:text-gray-200 transition"><i class="ri-whatsapp-fill text-lg"></i></a>
+                <a href="https://wa.me/917428752999" target="_blank" class="hover:text-gray-200 transition"><i
+                        class="ri-whatsapp-fill text-lg"></i></a>
             </div>
         </div>
     </div>
@@ -282,7 +288,8 @@
 
                 <div class="flex gap-2 lg:gap-10 z-10">
                     <!-- Download Brochure Button -->
-                    <button class="open-popup-btn hidden md:flex items-center text-sm gap-2 bg-[#3e7911] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-[#3e7911] transition duration-300">
+                    <button
+                        class="open-popup-btn hidden md:flex items-center text-sm gap-2 bg-[#3e7911] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-[#3e7911] transition duration-300">
                         <i class="ri-download-2-line"></i> Download Brochure
                     </button>
                 </div>
@@ -328,13 +335,15 @@
                 </ul>
 
                 <div class="px-6 mt-3">
-                    <button class="open-popup-btn w-full text-center text-xs bg-[#3e7911] text-white py-3 rounded-lg hover:bg-[#3e7911] transition-all duration-200 flex justify-center items-center gap-2">
+                    <button
+                        class="open-popup-btn w-full text-center text-xs bg-[#3e7911] text-white py-3 rounded-lg hover:bg-[#3e7911] transition-all duration-200 flex justify-center items-center gap-2">
                         <i class="ri-download-2-line"></i> Download Brochure
                     </button>
                 </div>
 
                 <div class="flex space-x-3 justify-center w-full absolute bottom-5">
-                    <a href="https://www.facebook.com/profile.php?id=61573970061177&rdid=2VkEqQnvfYPVIjev&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AMsLAo9vf%2F#" target="_blank"
+                    <a href="https://www.facebook.com/profile.php?id=61573970061177&rdid=2VkEqQnvfYPVIjev&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AMsLAo9vf%2F#"
+                        target="_blank"
                         class="text-[#3e7911] text-xl w-9 h-9 hover:bg-[#3e7911] hover:text-white transition-all duration-300 rounded-full border border-[#3e7911] flex justify-center items-center">
                         <i class="ri-facebook-circle-fill"></i>
                     </a>
@@ -427,41 +436,50 @@
             </div>
 
             <!-- Inquiry Form -->
-            <div class="bg-gradient-to-br from-[#fefcdf] via-[#f6ffe3] to-[#fff3e3] px-6 py-10 lg:p-10 rounded-2xl shadow-xl" id="inquery_form">
+            <div class="bg-gradient-to-br from-[#fefcdf] via-[#f6ffe3] to-[#fff3e3] px-6 py-10 lg:p-10 rounded-2xl shadow-xl"
+                id="inquiry_form">
                 <h3 class="text-2xl font-bold text-center text-black mb-6">Inquiry Form</h3>
                 <form class="space-y-4 lg:space-y-6">
                     <!-- Full Name -->
                     <div>
                         <label class="block mb-1 text-sm font-medium">Full Name <span
                                 class="text-red-500">*</span></label>
-                        <input type="text" required placeholder="Your Name"
-                            class="text-sm w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#ef7714] outline-none">
+                        <input type="text" name="full_name" placeholder="Full Name"
+                            class="inquiry-name text-sm w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#ef7714] outline-none" />
+                        <p class="inquiry-error-name text-red-600 text-sm mt-1"></p>
                     </div>
 
                     <!-- Email -->
                     <div>
                         <label class="block mb-1 text-sm font-medium">Email Address <span
                                 class="text-red-500">*</span></label>
-                        <input type="email" required placeholder="you@example.com"
-                            class="text-sm w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#ef7714] outline-none">
+                        <input type="email" name="email" placeholder="Enter Email Id"
+                            class="inquiry-email text-sm w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#ef7714] outline-none" />
+                        <p class="inquiry-error-email text-red-600 text-sm mt-1"></p>
                     </div>
 
                     <!-- Phone -->
                     <div>
                         <label class="block mb-1 text-sm font-medium">Phone Number <span
                                 class="text-red-500">*</span></label>
-                        <input type="tel" required maxlength="10" pattern="[0-9]{10}"
-                            placeholder="Enter 10-digit number"
-                            class="text-sm w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#ef7714] outline-none">
+                        <input type="tel" name="phone" placeholder="Enter Number" maxlength="10"
+                            class="inquiry-phone text-sm w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#ef7714] outline-none" />
+                        <p class="inquiry-error-phone text-red-600 text-sm mt-1"></p>
                     </div>
 
                     <!-- Message -->
                     <div>
                         <label class="block mb-1 text-sm font-medium">Message / Query <span
                                 class="text-red-500">*</span></label>
-                        <textarea required rows="4" placeholder="Type your query here..."
-                            class="text-sm w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#ef7714] outline-none"></textarea>
+                        <textarea rows="4" name="message" placeholder="Type your query here..."
+                            class="inquiry-message text-sm w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#ef7714] outline-none"></textarea>
+                        <p class="inquiry-error-message text-red-600 text-sm mt-1"></p>
                     </div>
+
+                    <!-- Success Message -->
+                    <p id="success_contact_Message" class="text-green-600 text-center font-[600] mb-4 hidden">
+                        Form submitted successfully!
+                    </p>
 
                     <!-- Submit -->
                     <div class="text-center pt-4">
@@ -596,6 +614,7 @@
 
     <!-- custom js -->
     <script src="assets/js/query-form.js"></script>
+    <script src="assets/js/contact_form.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 
