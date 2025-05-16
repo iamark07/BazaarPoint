@@ -37,13 +37,13 @@
 
     <!-- Overlay -->
     <div id="popup-overlay"
-        class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-[3px] z-[998] opacity-0 pointer-events-none transition-all duration-300">
+        class="hidden fixed inset-0 bg-black bg-opacity-50 backdrop-blur-[3px] z-[998]">
     </div>
     <!-- Popup -->
-    <div id="popup" class="fixed z-[999] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+    <div id="popup" class="hidden fixed z-[999] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
     w-[90%] max-w-3xl p-6 md:p-10 bg-white/80 backdrop-blur-xl 
     rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white border-opacity-30 
-    opacity-0 pointer-events-none -mt-40 transition-all duration-300">
+    ">
         <h3 class="text-lg md:text-3xl font-[600] mb-2">Become a Verified Franchise Partner</h3>
         <p class="mb-4 text-gray-800 text-sm md:text-base">Join the fastest growing retail network with MegaMart99.</p>
 
@@ -140,14 +140,21 @@
 
             <!-- Terms & Newsletter -->
             <div class="flex flex-col md:flex-row gap-3 md:gap-10 mt-2">
-                <div class="flex items-center form-group">
-                    <input type="checkbox" id="terms" />
-                    <label for="terms" class="text-xs md:text-base ml-2">I agree to the <a href=""
-                            class="text-blue-500 underline">Terms & Conditions</a></label>
+                <div class="flex flex-col items-start form-group">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="terms" />
+                        <label for="terms" class="text-xs md:text-base ml-2">
+                            I agree to the <a href="#" class="text-blue-500 underline">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <p class="error-message text-red-500 text-sm my-2 hidden"></p>
                 </div>
-                <div class="flex items-center">
-                    <input type="checkbox" id="newsletter" />
-                    <label for="newsletter" class="text-xs md:text-base ml-2">Subscribe to newsletter</label>
+
+                <div class="flex items-start">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="newsletter" />
+                        <label for="newsletter" class="text-xs md:text-base ml-2">Subscribe to newsletter</label>
+                    </div>
                 </div>
             </div>
 
@@ -162,7 +169,7 @@
 
     <!-- Popup Inquiry Form Success Message -->
     <div id="success-message"
-        class="absolute z-[999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden w-[90%] sm:w-[400px] md:w-[600px] md:h-[300px] flex flex-col items-center justify-center text-center py-10 bg-white/90 backdrop-blur-xl border border-white border-opacity-30 p-8 rounded-2xl shadow-2xl transition-all duration-300">
+        class="fixed z-[999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden w-[90%] sm:w-[400px] md:w-[600px] md:h-[300px] flex flex-col items-center justify-center text-center py-10 bg-white/90 backdrop-blur-xl border border-white border-opacity-30 p-8 rounded-2xl shadow-2xl transition-all duration-300">
 
         <!-- Animated Checkmark SVG -->
         <svg class="mx-auto w-20 h-20 text-green-500" viewBox="0 0 52 52">
