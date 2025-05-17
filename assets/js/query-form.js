@@ -285,7 +285,7 @@ window.addEventListener("load", function () {
 
   let otpSent = false;
   let formSubmitted = false;
-  const validOTP = "123456"; // ye sirf demo ke liye hai; real OTP validation API pe karenge
+  const validOTP = "123456"; // demo otp
 
   function showPopup() {
     if (!formSubmitted) {
