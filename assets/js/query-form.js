@@ -263,12 +263,11 @@
 //   });
 // });
 
-
-
 window.addEventListener("load", function () {
   const loader = document.getElementById("loader");
   if (loader) loader.classList.add("opacity-0", "pointer-events-none");
 
+  const open_pop_up_btn = document.querySelectorAll(".open-popup-btn");
   const popup = document.getElementById("popup");
   const popup_overlay = document.getElementById("popup-overlay");
   const pop_form = document.getElementById("popupForm");
@@ -287,15 +286,22 @@ window.addEventListener("load", function () {
   let formSubmitted = false;
   const validOTP = "123456"; // demo otp
 
+  open_pop_up_btn.forEach((open_popup_btn) => {
+    open_popup_btn.addEventListener("click", () => {
+      popup.classList.remove("hidden", "hide_pop_up_form");
+      popup.classList.add("show_pop_up_form");
+
+      popup_overlay.classList.remove("hidden", "hide_pop_up_form_overlay");
+      popup_overlay.classList.add("show_pop_up_form_overlay");
+    });
+  });
+
   function showPopup() {
     if (!formSubmitted) {
       popup.classList.remove("hidden", "hide_pop_up_form");
       popup.classList.add("show_pop_up_form");
 
-      popup_overlay.classList.remove(
-        "hidden",
-        "hide_pop_up_form_overlay"
-      );
+      popup_overlay.classList.remove("hidden", "hide_pop_up_form_overlay");
       popup_overlay.classList.add("show_pop_up_form_overlay");
     }
   }
@@ -421,7 +427,6 @@ window.addEventListener("load", function () {
     return isValid;
   }
 
-  
   function sendOtpToWhatsApp(phoneNumber) {
     return fetch(
       `https://sastakirana.com/action/otp-verification.php?mobile=${phoneNumber}`
@@ -434,7 +439,7 @@ window.addEventListener("load", function () {
       })
       .then((data) => {
         console.log("OTP API response:", data);
-        
+
         if (data.success || data.status === "success") {
           return true;
         } else {
@@ -494,7 +499,6 @@ window.addEventListener("load", function () {
         return;
       }
 
-     
       if (enteredOTP !== validOTP) {
         showError(otpField, "Invalid OTP");
         return;
@@ -537,6 +541,3 @@ window.addEventListener("load", function () {
     this.value = this.value.replace(/[^0-9]/g, "").slice(0, 6);
   });
 });
-
-
-
